@@ -19,6 +19,5 @@ early March, and 8 hours behind from mid-March (US daylight saving), so Yerevan 
 
 | Date | Yerevan | Video | Version | Status |
 |---|---|---|---|---|
-| Fri 20 Nov 2026 | 17:00 | Eat Your Veggies! (Veggie Squad) | Short | reminder set |
-| Sun 22 Nov 2026 | 18:00 | Eat Your Veggies! (Veggie Squad) | Regular 16:9 | reminder set |
-| from Mon 23 Nov | per the weekly rhythm | next songs (topics from the owner) | | waiting for topics |
+| — | — | Eat Your Veggies! (Veggie Squad) | Short + Regular | ✅ already uploaded by the owner as a test; not part of the schedule |
+| next free slot | per the weekly rhythm | first new song (topics from the owner) | | waiting for topics |
