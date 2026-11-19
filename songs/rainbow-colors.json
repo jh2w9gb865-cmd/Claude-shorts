@@ -1,0 +1,36 @@
+{
+  "model_id": "music_v2_5",
+  "composition_plan": {
+    "chunks": [
+      {
+        "text": "[Verse]\nRed, red, the ladybug is red!\nOrange, orange, a fox from tail to head!\nYellow, yellow, the little chick says peep!\nGreen, green, the froggy loves to leap!\nBlue, blue, the bluebird sings a song!\nPurple, purple, grapes, come sing along!",
+        "duration_ms": 28000,
+        "positive_styles": [
+          "happy children's song",
+          "upbeat kids pop",
+          "bright cheerful female lead vocal",
+          "playful xylophone and marimba",
+          "ukulele strums",
+          "hand claps",
+          "bouncy bassline",
+          "120 bpm",
+          "clear simple lyrics, each word easy to hear",
+          "great production quality"
+        ],
+        "negative_styles": ["sad", "dark", "heavy distortion", "explicit"]
+      },
+      {
+        "text": "[Chorus]\nRed, orange, yellow, green,\nblue and purple, can't you see?\nAll the colors, one, two, three,\nmake a rainbow just for me! Hooray!",
+        "duration_ms": 16000,
+        "positive_styles": [
+          "catchy sing-along chorus",
+          "kids choir backing vocals",
+          "energetic and joyful",
+          "hand claps",
+          "big happy ending"
+        ],
+        "negative_styles": ["sad", "dark"]
+      }
+    ]
+  }
+}

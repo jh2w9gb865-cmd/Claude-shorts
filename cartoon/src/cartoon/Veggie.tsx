@@ -412,7 +412,7 @@ const Legs: React.FC<{ spec: Spec; spread: number }> = ({ spec, spread }) => {
 
 /* ---------- entrance sparkle burst ---------- */
 
-const Burst: React.FC<{ x: number; y: number; local: number }> = ({
+export const Burst: React.FC<{ x: number; y: number; local: number }> = ({
   x,
   y,
   local,

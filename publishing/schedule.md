@@ -20,4 +20,6 @@ early March, and 8 hours behind from mid-March (US daylight saving), so Yerevan 
 | Date | Yerevan | Video | Version | Status |
 |---|---|---|---|---|
 | — | — | Eat Your Veggies! (Veggie Squad) | Short + Regular | ✅ already uploaded by the owner as a test; not part of the schedule |
-| next free slot | per the weekly rhythm | first new song (topics from the owner) | | waiting for topics |
+| Mon 23 Nov 2026 | 17:00 | Rainbow Colors Song | Short | reminder set (16:40) |
+| Fri 27 Nov 2026 | 18:00 | Rainbow Colors Song | Regular 16:9 | reminder set (17:40) |
+| Wed 25 Nov / Sun 29 Nov | 17:00 / 18:00 | next song (song B of the week) | | waiting for topic |

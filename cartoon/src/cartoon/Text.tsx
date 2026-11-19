@@ -273,7 +273,13 @@ export const LyricBanner: React.FC<{ lines: LyricLine[] } & Layout["banner"]> = 
 };
 
 /** Big "HEY!" starburst. */
-export const HeyBurst: React.FC<{ at: number; x: number; y: number }> = ({ at, x, y }) => {
+export const HeyBurst: React.FC<{ at: number; x: number; y: number; text?: string; fontSize?: number }> = ({
+  at,
+  x,
+  y,
+  text = "HEY!",
+  fontSize = 150,
+}) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const local = frame - at;
@@ -309,12 +315,12 @@ export const HeyBurst: React.FC<{ at: number; x: number; y: number }> = ({ at, x
           justifyContent: "center",
           fontFamily,
           fontWeight: 900,
-          fontSize: 150,
+          fontSize,
           color: "#ff3b3b",
           WebkitTextStroke: `6px ${OUTLINE}`,
         }}
       >
-        HEY!
+        {text}
       </div>
     </div>
   );
