@@ -1,7 +1,17 @@
 import { Composition, Folder } from "remotion";
 import { VeggieCartoon } from "./cartoon/VeggieCartoon";
+import { ChannelAvatar, ChannelBanner } from "./channel/ChannelArt";
 
 export const RemotionRoot: React.FC = () => {
+  return (
+    <>
+      <VeggieRoot />
+      <ChannelRoot />
+    </>
+  );
+};
+
+const VeggieRoot: React.FC = () => {
   return (
     <Folder name="Veggie-Squad">
       {/* 9:16 — YouTube Shorts, TikTok, Instagram Reels */}
@@ -24,6 +34,16 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{ layout: "landscape" as const }}
       />
+    </Folder>
+  );
+};
+
+export const ChannelRoot: React.FC = () => {
+  return (
+    <Folder name="Channel-Art">
+      {/* Render frame 80 so the title letters have finished popping in */}
+      <Composition id="ChannelAvatar" component={ChannelAvatar} durationInFrames={90} fps={30} width={800} height={800} />
+      <Composition id="ChannelBanner" component={ChannelBanner} durationInFrames={90} fps={30} width={2560} height={1440} />
     </Folder>
   );
 };

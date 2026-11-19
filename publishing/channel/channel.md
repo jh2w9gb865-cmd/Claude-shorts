@@ -1,39 +1,47 @@
-# YouTube channel setup
+# Sunny Sprouts — YouTube channel setup
 
-## Channel name options
+**Name:** Sunny Sprouts
+**Handle:** @SunnySproutsSongs (alternatives if taken: @SunnySproutsKids, @SunnySproutsTV)
+**Tagline:** Happy songs for little ones!
 
-| # | Name | Handle idea | Why it works |
-|---|------|-------------|--------------|
-| 1 | **Sunny Sprouts** | @SunnySproutsSongs | Warm and happy, with "sprouts" for little kids growing up healthy. Broad enough for any topic: veggies, brushing teeth, colors, animals. ⭐ Recommended |
-| 2 | **Veggie Squad Tunes** | @VeggieSquadTunes | Builds a brand around our characters, but narrower if we go beyond food. |
-| 3 | **Happy Garden Songs** | @HappyGardenSongs | A garden world where every song lives. Bright and friendly. |
-| 4 | **Yum Yum Tunes** | @YumYumTunes | Comes from our chorus. Catchy and easy for toddlers to say. |
-| 5 | **Rainbow Hop Kids** | @RainbowHopKids | Colors and dancing, our visual signature (rainbow + jumping characters). |
+## Files
 
-Before choosing, search the name on YouTube and check that the @handle is free.
+| File | Where to upload | Spec |
+|---|---|---|
+| `sunny-sprouts-avatar-800.png` | Customization → Branding → **Picture** | 800×800, shown as a circle |
+| `sunny-sprouts-banner-2560x1440.jpg` | Customization → Branding → **Banner image** | 2560×1440; name and tagline sit inside the 1546×423 safe area |
 
-## Channel description (draft; the name gets filled in once chosen)
+## Channel description (Customization → Basic info → Description)
 
 ```
-Welcome to {CHANNEL NAME}! 🌈🎶
+Welcome to Sunny Sprouts! 🌞🌱
 
 Happy, colorful cartoon songs for little ones ages 2–6. Sing, dance and learn
-with cheerful characters like the Veggie Squad: Tommy Tomato, Benny Broccoli,
-Cara Carrot and Cooper Cucumber!
+with our cheerful friends: the Veggie Squad, Bunny, Chick, Froggy, Teddy Bear
+and lots more!
 
 Our songs help kids:
-🥕 love healthy food and good habits
-🎵 sing along with simple, catchy lyrics
-💃 move, dance and have fun
-📚 learn new English words
+🥕 love healthy food and good everyday habits
+🎵 sing along with simple, catchy English lyrics
+💃 move, dance and burn off energy
+📚 learn new words, colors, numbers and animals
 
-New songs and Shorts every week. Subscribe and sing with us! 💛
+New songs every week, plus fun Shorts in between. Subscribe and grow with us! 💛
 
-For parents: all videos are made for kids, ad-light and family-friendly.
+Parents: every video is made for kids, family-friendly and has English subtitles,
+perfect for mealtime, playtime and dance breaks.
 ```
 
-## Channel art specs (made after the name is chosen)
+## Channel keywords (Settings → Channel → Keywords)
 
-- **Avatar**: 800×800 PNG, displayed as a circle (keep key content in the middle ~70%).
-- **Banner**: 2560×1440 JPG/PNG. The safe area visible on every device is the central 1546×423, so the name and logo go there.
-- **Watermark** (optional): 150×150 PNG, a small subscribe badge.
+```
+kids songs, nursery rhymes, songs for kids, toddler songs, preschool songs, kindergarten songs, sing along, cartoon songs, healthy habits for kids, educational songs, children's music, learning songs, baby songs, Sunny Sprouts, Veggie Squad
+```
+
+## Settings checklist
+
+- Settings → Channel → Advanced settings → Audience: **"Yes, set this channel as made for kids"**
+- Country: the country you live in (where the channel's owner is)
+- Default upload language: **English**; title/description language: **English**
+- Upload defaults → Category: **Education**; Subtitles: on
+- Layout → Featured sections: Shorts, Popular uploads, and playlists such as "Healthy Habits Songs" and "Dance Songs"
