@@ -134,3 +134,35 @@ export const CompilationThumb: React.FC = () => {
     </AbsoluteFill>
   );
 };
+
+/* ---------- 9:16 teaser Short: both choruses back to back ---------- */
+
+export const TEASER_PARTS = [
+  { song: "veggie" as const, from: 440, to: VEGGIE_LEN, sky: "sunset" as SkyTheme },
+  { song: "colors" as const, from: 840, to: COLORS_LEN, sky: "magic" as SkyTheme },
+];
+export const TEASER_LEN = TEASER_PARTS.reduce((n, p) => n + p.to - p.from, 0);
+
+export const MixTeaserShort: React.FC = () => {
+  let at = 0;
+  return (
+    <AbsoluteFill style={{ background: "#2b1a3d" }}>
+      {TEASER_PARTS.map((p, i) => {
+        const start = at;
+        at += p.to - p.from;
+        return (
+          <Sequence key={i} from={start} durationInFrames={p.to - p.from}>
+            {/* shift the song so it starts from its chorus */}
+            <Sequence from={-p.from}>
+              <SkyContext.Provider value={p.sky}>
+                <Iris on={i > 0}>
+                  {p.song === "colors" ? <ColorsCartoon layout="portrait" /> : <VeggieCartoon layout="portrait" />}
+                </Iris>
+              </SkyContext.Provider>
+            </Sequence>
+          </Sequence>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};

@@ -2,7 +2,7 @@ import { Composition, Folder } from "remotion";
 import { VeggieCartoon } from "./cartoon/VeggieCartoon";
 import { ChannelAvatar, ChannelBanner } from "./channel/ChannelArt";
 import { ColorsCartoon } from "./colors/ColorsCartoon";
-import { COMPILATION_LEN, Compilation, CompilationThumb } from "./compilation/Compilation";
+import { COMPILATION_LEN, Compilation, CompilationThumb, MixTeaserShort, TEASER_LEN } from "./compilation/Compilation";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -11,6 +11,7 @@ export const RemotionRoot: React.FC = () => {
       <ColorsRoot />
       <Folder name="Compilations">
         <Composition id="MixColorsVeggies" component={Compilation} durationInFrames={COMPILATION_LEN} fps={30} width={1920} height={1080} />
+        <Composition id="MixTeaserShort" component={MixTeaserShort} durationInFrames={TEASER_LEN} fps={30} width={1080} height={1920} />
         <Composition id="MixColorsVeggiesThumb" component={CompilationThumb} durationInFrames={1322} fps={30} width={1920} height={1080} />
       </Folder>
       <ChannelRoot />
