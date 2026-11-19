@@ -1,6 +1,7 @@
 import React from "react";
 import { interpolate, spring, useCurrentFrame, useVideoConfig } from "remotion";
 import { fontFamily } from "./font";
+import type { Layout } from "./layout";
 import { OUTLINE, clamp } from "./shared";
 
 const LETTER_COLORS = ["#ff3b3b", "#ff8a1f", "#ffd60a", "#3ec43e", "#2fa8ff", "#7c4dff", "#ff4f9a"];
@@ -92,9 +93,9 @@ export const BouncyTitle: React.FC<{
   );
 };
 
-export const IntroTitle: React.FC<{ exitAt: number }> = ({ exitAt }) => {
+export const IntroTitle: React.FC<{ exitAt: number; cfg: Layout["intro"] }> = ({ exitAt, cfg }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width } = useVideoConfig();
   const move = spring({ frame: frame - 62, fps, config: { damping: 14, stiffness: 90 } });
   const exit = interpolate(frame, [exitAt, exitAt + 12], [1, 0], clamp);
   if (exit <= 0) return null;
@@ -103,34 +104,35 @@ export const IntroTitle: React.FC<{ exitAt: number }> = ({ exitAt }) => {
       style={{
         position: "absolute",
         left: 0,
-        width: 1080,
-        top: interpolate(move, [0, 1], [760, 190]),
+        width,
+        top: interpolate(move, [0, 1], [cfg.topFrom, cfg.topTo]),
         display: "flex",
         justifyContent: "center",
-        scale: `${interpolate(move, [0, 1], [1.2, 0.95]) * exit}`,
+        scale: `${interpolate(move, [0, 1], [cfg.scaleFrom, cfg.scaleTo]) * exit}`,
         transformOrigin: "50% 50%",
       }}
     >
-      <BouncyTitle lines={["Veggie", "Squad!"]} start={6} size={165} />
+      <BouncyTitle lines={cfg.lines} start={6} size={cfg.size} />
     </div>
   );
 };
 
-export const FinalTitle: React.FC<{ startAt: number }> = ({ startAt }) => {
+export const FinalTitle: React.FC<{ startAt: number; cfg: Layout["final"] }> = ({ startAt, cfg }) => {
   const frame = useCurrentFrame();
+  const { width } = useVideoConfig();
   if (frame < startAt - 2) return null;
   return (
     <div
       style={{
         position: "absolute",
         left: 0,
-        width: 1080,
-        top: 170,
+        width,
+        top: cfg.top,
         display: "flex",
         justifyContent: "center",
       }}
     >
-      <BouncyTitle lines={["Eat Your", "Veggies!"]} start={startAt} size={150} />
+      <BouncyTitle lines={cfg.lines} start={startAt} size={cfg.size} />
     </div>
   );
 };
@@ -145,7 +147,7 @@ export const SpeechBubble: React.FC<{
   color: string;
 }> = ({ lines, targetX, headY, color }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width } = useVideoConfig();
   const from = lines[0].from;
   const to = lines[lines.length - 1].to;
   if (frame < from || frame >= to) return null;
@@ -156,7 +158,7 @@ export const SpeechBubble: React.FC<{
   const out = interpolate(frame, [to - 7, to], [1, 0], clamp);
   const W = 760;
   const H = 230;
-  const cx = Math.min(Math.max(targetX, 40 + W / 2), 1040 - W / 2);
+  const cx = Math.min(Math.max(targetX, 40 + W / 2), width - 40 - W / 2);
   const left = cx - W / 2;
   const tailX = targetX - left;
   const top = headY - 60 - H;
@@ -220,7 +222,7 @@ export const SpeechBubble: React.FC<{
 };
 
 /** Sing-along banner for the chorus. */
-export const LyricBanner: React.FC<{ lines: LyricLine[]; top: number }> = ({ lines, top }) => {
+export const LyricBanner: React.FC<{ lines: LyricLine[] } & Layout["banner"]> = ({ lines, top, left, width: bw }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const current = lines.find((l) => frame >= l.from && frame < l.to);
@@ -233,8 +235,8 @@ export const LyricBanner: React.FC<{ lines: LyricLine[]; top: number }> = ({ lin
     <div
       style={{
         position: "absolute",
-        left: 50,
-        width: 980,
+        left,
+        width: bw,
         top,
         height: 190,
         display: "flex",

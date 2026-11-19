@@ -452,7 +452,8 @@ export const Veggie: React.FC<{
   danceAt: number;
   heyAt: number;
   phase: number;
-}> = ({ kind, x, y, enterAt, talkFrom, talkTo, danceAt, heyAt, phase }) => {
+  size?: number;
+}> = ({ kind, x, y, enterAt, talkFrom, talkTo, danceAt, heyAt, phase, size = 1 }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   if (frame < enterAt) return null;
@@ -482,7 +483,7 @@ export const Veggie: React.FC<{
   const wHey = heyT > 0 && heyT < 1 ? Math.sin(heyT * Math.PI) : 0;
   // Before the chorus, nod to the beat
   const nod = (1 - wDance) * Math.abs(Math.sin((frame * Math.PI) / 15)) * 10;
-  const jump = wDance * -air * 85 * (1 - wHey) - wHey * 230 - nod;
+  const jump = (wDance * -air * 85 * (1 - wHey) - wHey * 230 - nod) * size;
   const ground = wDance * Math.pow(1 - air, 6);
   const breathe = Math.sin(t * 0.15);
   const sy = (1 + breathe * 0.025) * (1 - 0.13 * ground);
@@ -513,7 +514,7 @@ export const Veggie: React.FC<{
   return (
     <>
       <g
-        transform={`translate(${x} ${y + hop + jump}) rotate(${rot}) scale(${sx * pop} ${sy * pop})`}
+        transform={`translate(${x} ${y + hop + jump}) rotate(${rot}) scale(${sx * pop * size} ${sy * pop * size})`}
       >
         <ellipse cx={0} cy={-4} rx={90} ry={16} fill="#000" opacity={0} />
         <Legs spec={spec} spread={wDance * air * 14} />
@@ -529,17 +530,18 @@ export const Veggie: React.FC<{
         <Arm x={shx} y={shy} angle={aR} side={1} />
         <Arm x={-shx} y={shy} angle={aL} side={-1} />
       </g>
-      <Burst x={x} y={y - spec.height / 2} local={local - 4} />
+      <Burst x={x} y={y - (spec.height * size) / 2} local={local - 4} />
     </>
   );
 };
 
-export const Shadow: React.FC<{ x: number; y: number; enterAt: number; danceAt: number; phase: number }> = ({
+export const Shadow: React.FC<{ x: number; y: number; enterAt: number; danceAt: number; phase: number; size?: number }> = ({
   x,
   y,
   enterAt,
   danceAt,
   phase,
+  size = 1,
 }) => {
   const frame = useCurrentFrame();
   if (frame < enterAt) return null;
@@ -551,8 +553,8 @@ export const Shadow: React.FC<{ x: number; y: number; enterAt: number; danceAt: 
     <ellipse
       cx={x}
       cy={y - 4}
-      rx={95 * (1 - air * 0.3) * appear}
-      ry={18 * (1 - air * 0.3) * appear}
+      rx={95 * size * (1 - air * 0.3) * appear}
+      ry={18 * size * (1 - air * 0.3) * appear}
       fill="#1d6b1f"
       opacity={0.3}
     />

@@ -8,6 +8,7 @@ import {
   useCurrentFrame,
   useVideoConfig,
 } from "remotion";
+import type { Layout } from "./layout";
 import { OUTLINE, SW, clamp } from "./shared";
 
 export const Sky: React.FC = () => (
@@ -21,13 +22,13 @@ export const Sky: React.FC = () => (
 
 export const Sun: React.FC<{ x: number; y: number }> = ({ x, y }) => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps, width, height } = useVideoConfig();
   const pop = spring({ frame: frame - 4, fps, config: { damping: 10, stiffness: 90 } });
   const rays = Array.from({ length: 12 });
   return (
     <svg
-      width={1080}
-      height={1920}
+      width={width}
+      height={height}
       style={{ position: "absolute", inset: 0, overflow: "visible" }}
     >
       <g transform={`translate(${x} ${y}) scale(${pop})`}>
@@ -104,21 +105,17 @@ const Cloud: React.FC<{ x: number; y: number; scale: number }> = ({
   </g>
 );
 
-export const Clouds: React.FC = () => {
+export const Clouds: React.FC<{ clouds: Layout["clouds"] }> = ({ clouds }) => {
   const frame = useCurrentFrame();
-  const clouds = [
-    { x0: 120, y: 560, s: 1.1, v: 0.9 },
-    { x0: 760, y: 430, s: 0.85, v: 0.6 },
-    { x0: 420, y: 1010, s: 0.75, v: 0.75 },
-  ];
+  const { width, height } = useVideoConfig();
   return (
     <svg
-      width={1080}
-      height={1920}
+      width={width}
+      height={height}
       style={{ position: "absolute", inset: 0, overflow: "visible" }}
     >
       {clouds.map((c, i) => {
-        const x = ((c.x0 + frame * c.v + 200) % 1480) - 200;
+        const x = ((c.x0 + frame * c.v + 200) % (width + 400)) - 200;
         const bob = Math.sin(frame * 0.05 + i) * 6;
         return <Cloud key={i} x={x} y={c.y + bob} scale={c.s} />;
       })}
@@ -128,23 +125,22 @@ export const Clouds: React.FC = () => {
 
 const RAINBOW = ["#ff3b3b", "#ff8a1f", "#ffd60a", "#3ec43e", "#2fa8ff", "#7c4dff"];
 
-export const Rainbow: React.FC<{ startAt: number }> = ({ startAt }) => {
+export const Rainbow: React.FC<{ startAt: number } & Layout["rainbow"]> = ({ startAt, cx, cy, r: r0 }) => {
   const frame = useCurrentFrame();
+  const { width, height } = useVideoConfig();
   const p = interpolate(frame, [startAt, startAt + 36], [0, 1], {
     ...clamp,
     easing: Easing.out(Easing.cubic),
   });
   if (p <= 0) return null;
-  const cx = 540;
-  const cy = 1460;
   return (
     <svg
-      width={1080}
-      height={1920}
+      width={width}
+      height={height}
       style={{ position: "absolute", inset: 0, overflow: "visible" }}
     >
       {RAINBOW.map((c, i) => {
-        const r = 700 - i * 44;
+        const r = r0 - i * 44;
         return (
           <path
             key={c}
@@ -193,52 +189,22 @@ const Flower: React.FC<{ x: number; y: number; color: string; i: number; s?: num
   );
 };
 
-export const Hills: React.FC = () => {
+export const Hills: React.FC<{ back: Layout["backHill"]; front: Layout["frontHill"] }> = ({ back, front }) => {
+  const { width, height } = useVideoConfig();
   return (
     <svg
-      width={1080}
-      height={1920}
+      width={width}
+      height={height}
       style={{ position: "absolute", inset: 0, overflow: "visible" }}
     >
-      <path
-        d="M -20 1250 Q 270 1110 560 1215 T 1100 1190 L 1100 1940 L -20 1940 Z"
-        fill="#9be15d"
-        stroke={OUTLINE}
-        strokeWidth={SW}
-      />
-      <path
-        d="M 40 1250 Q 270 1150 480 1220"
-        stroke="#c4f58a"
-        strokeWidth={14}
-        strokeLinecap="round"
-        fill="none"
-      />
-      <Flower x={70} y={1300} color="#ff4f9a" i={0} />
-      <Flower x={160} y={1265} color="#7c4dff" i={1} s={0.8} />
-      <Flower x={530} y={1290} color="#ff8a1f" i={2} />
-      <Flower x={985} y={1290} color="#ff3b3b" i={3} s={0.9} />
-      <Flower x={1050} y={1250} color="#2fa8ff" i={4} s={0.75} />
-      <path
-        d="M -20 1560 Q 300 1470 610 1540 T 1100 1520 L 1100 1940 L -20 1940 Z"
-        fill="#46c33a"
-        stroke={OUTLINE}
-        strokeWidth={SW}
-      />
-      <path
-        d="M 30 1560 Q 300 1495 560 1545"
-        stroke="#7be06a"
-        strokeWidth={14}
-        strokeLinecap="round"
-        fill="none"
-      />
-      {[
-        [80, 1700],
-        [540, 1650],
-        [480, 1830],
-        [1010, 1680],
-        [640, 1880],
-        [120, 1880],
-      ].map(([x, y], i) => (
+      <path d={back.path} fill="#9be15d" stroke={OUTLINE} strokeWidth={SW} />
+      <path d={back.shine} stroke="#c4f58a" strokeWidth={14} strokeLinecap="round" fill="none" />
+      {back.flowers.map((f, i) => (
+        <Flower key={`b${i}`} x={f.x} y={f.y} color={f.color} s={f.s} i={i} />
+      ))}
+      <path d={front.path} fill="#46c33a" stroke={OUTLINE} strokeWidth={SW} />
+      <path d={front.shine} stroke="#7be06a" strokeWidth={14} strokeLinecap="round" fill="none" />
+      {front.grass.map(([x, y], i) => (
         <g key={`grass${i}`} transform={`translate(${x} ${y})`}>
           {[-14, 0, 14].map((dx) => (
             <path
@@ -252,24 +218,20 @@ export const Hills: React.FC = () => {
           ))}
         </g>
       ))}
-      <Flower x={540} y={1610} color="#ffd60a" i={5} s={0.9} />
-      <Flower x={40} y={1650} color="#ff4f9a" i={6} />
-      <Flower x={1040} y={1640} color="#7c4dff" i={7} />
-      <Flower x={560} y={1860} color="#2fa8ff" i={8} s={1.1} />
+      {front.flowers.map((f, i) => (
+        <Flower key={`f${i}`} x={f.x} y={f.y} color={f.color} s={f.s} i={i + 5} />
+      ))}
     </svg>
   );
 };
 
-export const Butterflies: React.FC = () => {
+export const Butterflies: React.FC<{ flies: Layout["butterflies"] }> = ({ flies }) => {
   const frame = useCurrentFrame();
-  const flies = [
-    { x0: -100, y0: 820, v: 3.2, color: "#ff4f9a", ph: 0 },
-    { x0: 1180, y0: 1080, v: -2.6, color: "#ffd60a", ph: 2 },
-  ];
+  const { width, height } = useVideoConfig();
   return (
     <svg
-      width={1080}
-      height={1920}
+      width={width}
+      height={height}
       style={{ position: "absolute", inset: 0, overflow: "visible" }}
     >
       {flies.map((b, i) => {
@@ -299,23 +261,24 @@ export const Butterflies: React.FC = () => {
 
 const CONFETTI_COLORS = ["#ff3b3b", "#ff8a1f", "#ffd60a", "#3ec43e", "#2fa8ff", "#7c4dff", "#ff4f9a"];
 
-export const Confetti: React.FC<{ startAt: number }> = ({ startAt }) => {
+export const Confetti: React.FC<{ startAt: number; count: number }> = ({ startAt, count }) => {
   const frame = useCurrentFrame();
+  const { width, height } = useVideoConfig();
   const local = frame - startAt;
   if (local < 0) return null;
   return (
     <svg
-      width={1080}
-      height={1920}
+      width={width}
+      height={height}
       style={{ position: "absolute", inset: 0, overflow: "visible" }}
     >
-      {Array.from({ length: 90 }).map((_, i) => {
-        const x0 = random(`x${i}`) * 1080;
+      {Array.from({ length: count }).map((_, i) => {
+        const x0 = random(`x${i}`) * width;
         const y0 = -60 - random(`y${i}`) * 900;
         const v = 7 + random(`v${i}`) * 7;
         // first wave falls from above, then pieces keep looping for the whole chorus
         const travel = local * v;
-        const y = travel < 2060 - y0 ? y0 + travel : ((y0 + travel) % 2200) - 140;
+        const y = travel < height + 140 - y0 ? y0 + travel : ((y0 + travel) % (height + 280)) - 140;
         const x = x0 + Math.sin(local * 0.1 + i) * 40;
         const rot = local * (4 + random(`r${i}`) * 8) + i * 30;
         const flip = Math.cos(local * 0.2 + i);
