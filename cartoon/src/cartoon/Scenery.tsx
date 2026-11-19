@@ -312,9 +312,10 @@ export const Confetti: React.FC<{ startAt: number }> = ({ startAt }) => {
       {Array.from({ length: 90 }).map((_, i) => {
         const x0 = random(`x${i}`) * 1080;
         const y0 = -60 - random(`y${i}`) * 900;
-        const v = 9 + random(`v${i}`) * 9;
-        const y = y0 + local * v;
-        if (y > 2000) return null;
+        const v = 7 + random(`v${i}`) * 7;
+        // first wave falls from above, then pieces keep looping for the whole chorus
+        const travel = local * v;
+        const y = travel < 2060 - y0 ? y0 + travel : ((y0 + travel) % 2200) - 140;
         const x = x0 + Math.sin(local * 0.1 + i) * 40;
         const rot = local * (4 + random(`r${i}`) * 8) + i * 30;
         const flip = Math.cos(local * 0.2 + i);

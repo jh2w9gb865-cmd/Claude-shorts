@@ -450,8 +450,9 @@ export const Veggie: React.FC<{
   talkFrom: number;
   talkTo: number;
   danceAt: number;
+  heyAt: number;
   phase: number;
-}> = ({ kind, x, y, enterAt, talkFrom, talkTo, danceAt, phase }) => {
+}> = ({ kind, x, y, enterAt, talkFrom, talkTo, danceAt, heyAt, phase }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   if (frame < enterAt) return null;
@@ -474,9 +475,14 @@ export const Veggie: React.FC<{
   );
   const wDance = interpolate(frame, [danceAt, danceAt + 8], [0, 1], clamp);
 
-  const beat = ((frame - danceAt) * Math.PI) / 15 + phase * 0.6;
+  const beat = ((frame - danceAt) * Math.PI) / 15;
   const air = Math.abs(Math.sin(beat));
-  const jump = wDance * -air * 85;
+  // "Hey!" - one big jump with both arms straight up
+  const heyT = (frame - heyAt) / 24;
+  const wHey = heyT > 0 && heyT < 1 ? Math.sin(heyT * Math.PI) : 0;
+  // Before the chorus, nod to the beat
+  const nod = (1 - wDance) * Math.abs(Math.sin((frame * Math.PI) / 15)) * 10;
+  const jump = wDance * -air * 85 * (1 - wHey) - wHey * 230 - nod;
   const ground = wDance * Math.pow(1 - air, 6);
   const breathe = Math.sin(t * 0.15);
   const sy = (1 + breathe * 0.025) * (1 - 0.13 * ground);
@@ -488,12 +494,12 @@ export const Veggie: React.FC<{
 
   const baseR = -22 + Math.sin(t * 0.1) * 8;
   const baseL = 22 - Math.sin(t * 0.1 + 1) * 8;
-  const aR = mix(mix(baseR, -150 + Math.sin(frame * 0.5) * 28, wTalk), -145 + Math.sin(beat * 2) * 25, wDance);
-  const aL = mix(mix(baseL, 38, wTalk), 145 + Math.sin(beat * 2) * 25, wDance);
+  const aR = mix(mix(mix(baseR, -150 + Math.sin(frame * 0.5) * 28, wTalk), -145 + Math.sin(beat * 2) * 25, wDance), -172, wHey);
+  const aL = mix(mix(mix(baseL, 38, wTalk), 145 + Math.sin(beat * 2) * 25, wDance), 172, wHey);
 
   const mouth = mix(
     mix(0.18, 0.2 + 0.8 * Math.abs(Math.sin(frame * 0.45)), wTalk),
-    0.8,
+    0.45 + 0.45 * Math.abs(Math.sin(frame * 0.4 + phase)),
     wDance,
   );
   const cyc = (frame + phase * 29) % 90;
@@ -537,7 +543,7 @@ export const Shadow: React.FC<{ x: number; y: number; enterAt: number; danceAt: 
 }) => {
   const frame = useCurrentFrame();
   if (frame < enterAt) return null;
-  const beat = ((frame - danceAt) * Math.PI) / 15 + phase * 0.6;
+  const beat = ((frame - danceAt) * Math.PI) / 15 + phase * 0;
   const wDance = interpolate(frame, [danceAt, danceAt + 8], [0, 1], clamp);
   const air = wDance * Math.abs(Math.sin(beat));
   const appear = interpolate(frame, [enterAt, enterAt + 12], [0, 1], clamp);

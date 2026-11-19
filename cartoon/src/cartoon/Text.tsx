@@ -135,21 +135,26 @@ export const FinalTitle: React.FC<{ startAt: number }> = ({ startAt }) => {
   );
 };
 
+export type LyricLine = { from: number; to: number; text: string };
+
+/** Speech bubble above a character that shows the lyric line they're singing. */
 export const SpeechBubble: React.FC<{
-  from: number;
-  to: number;
+  lines: LyricLine[];
   targetX: number;
   headY: number;
-  name: string;
-  nameColor: string;
-  line: string;
-}> = ({ from, to, targetX, headY, name, nameColor, line }) => {
+  color: string;
+}> = ({ lines, targetX, headY, color }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
+  const from = lines[0].from;
+  const to = lines[lines.length - 1].to;
   if (frame < from || frame >= to) return null;
+  const current = lines.find((l) => frame >= l.from && frame < l.to) ?? lines[lines.length - 1];
   const pop = spring({ frame: frame - from, fps, config: { damping: 10, stiffness: 170 } });
+  // small "boing" each time the line changes
+  const repop = spring({ frame: frame - current.from, fps, config: { damping: 8, stiffness: 220 } });
   const out = interpolate(frame, [to - 7, to], [1, 0], clamp);
-  const W = 740;
+  const W = 760;
   const H = 230;
   const cx = Math.min(Math.max(targetX, 40 + W / 2), 1040 - W / 2);
   const left = cx - W / 2;
@@ -178,15 +183,24 @@ export const SpeechBubble: React.FC<{
           borderRadius: 80,
           boxShadow: `0 14px 0 rgba(43,26,61,0.25)`,
           display: "flex",
-          flexDirection: "column",
           alignItems: "center",
           justifyContent: "center",
+          padding: "0 46px",
         }}
       >
-        <div style={{ fontSize: 78, color: nameColor, lineHeight: 1.05, WebkitTextStroke: `3px ${OUTLINE}` }}>
-          {name}
+        <div
+          style={{
+            fontSize: 64,
+            lineHeight: 1.08,
+            color,
+            WebkitTextStroke: `3px ${OUTLINE}`,
+            textAlign: "center",
+            textWrap: "balance",
+            scale: `${interpolate(repop, [0, 1], [0.7, 1])}`,
+          }}
+        >
+          {current.text}
         </div>
-        <div style={{ fontSize: 54, color: OUTLINE, lineHeight: 1.15 }}>{line}</div>
       </div>
       <svg
         width={W}
@@ -201,6 +215,105 @@ export const SpeechBubble: React.FC<{
           strokeLinejoin="round"
         />
       </svg>
+    </div>
+  );
+};
+
+/** Sing-along banner for the chorus. */
+export const LyricBanner: React.FC<{ lines: LyricLine[]; top: number }> = ({ lines, top }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const current = lines.find((l) => frame >= l.from && frame < l.to);
+  if (!current) return null;
+  const pop = spring({ frame: frame - current.from, fps, config: { damping: 9, stiffness: 200 } });
+  const out = interpolate(frame, [current.to - 5, current.to], [1, 0.85], clamp);
+  // gentle karaoke fill across the line
+  const fill = interpolate(frame, [current.from, current.to - 8], [0, 100], clamp);
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: 50,
+        width: 980,
+        top,
+        height: 190,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        background: "#ffffff",
+        border: `8px solid ${OUTLINE}`,
+        borderRadius: 95,
+        boxShadow: "0 14px 0 rgba(43,26,61,0.25)",
+        scale: `${pop * out}`,
+        fontFamily,
+        fontWeight: 900,
+        padding: "0 40px",
+      }}
+    >
+      <div
+        style={{
+          fontSize: 66,
+          lineHeight: 1.08,
+          textAlign: "center",
+          textWrap: "balance",
+          backgroundImage: `linear-gradient(90deg, #ff3b3b, #ff8a1f, #ffd60a, #3ec43e, #2fa8ff, #7c4dff)`,
+          backgroundSize: "100% 100%",
+          WebkitBackgroundClip: "text",
+          color: "transparent",
+          WebkitTextStroke: `3px ${OUTLINE}`,
+          maskImage: `linear-gradient(90deg, #000 ${fill}%, rgba(0,0,0,0.45) ${fill + 8}%)`,
+        }}
+      >
+        {current.text}
+      </div>
+    </div>
+  );
+};
+
+/** Big "HEY!" starburst. */
+export const HeyBurst: React.FC<{ at: number; x: number; y: number }> = ({ at, x, y }) => {
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const local = frame - at;
+  if (local < 0 || local > 50) return null;
+  const pop = spring({ frame: local, fps, config: { damping: 7, stiffness: 200 } });
+  const out = interpolate(local, [38, 50], [1, 0], clamp);
+  const pts = Array.from({ length: 28 }, (_, i) => {
+    const a = (i / 28) * Math.PI * 2;
+    const r = i % 2 ? 150 : 230;
+    return `${Math.cos(a) * r},${Math.sin(a) * r * 0.75}`;
+  }).join(" ");
+  return (
+    <div
+      style={{
+        position: "absolute",
+        left: x - 260,
+        top: y - 200,
+        width: 520,
+        height: 400,
+        scale: `${pop * out}`,
+        rotate: `${Math.sin(local * 0.5) * 6}deg`,
+      }}
+    >
+      <svg width={520} height={400} viewBox="-260 -200 520 400" style={{ position: "absolute", inset: 0, overflow: "visible" }}>
+        <polygon points={pts} fill="#ffd60a" stroke={OUTLINE} strokeWidth={8} strokeLinejoin="round" />
+      </svg>
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontFamily,
+          fontWeight: 900,
+          fontSize: 150,
+          color: "#ff3b3b",
+          WebkitTextStroke: `6px ${OUTLINE}`,
+        }}
+      >
+        HEY!
+      </div>
     </div>
   );
 };
