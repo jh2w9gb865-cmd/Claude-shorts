@@ -4,6 +4,7 @@
 - **Regular video (16:9):** `eat-your-veggies-veggie-squad-16x9.mp4` (28 s, 1920×1080, with music)
 - **Short cover:** `veggie-squad-cover.jpg`
 - **YouTube thumbnail (16:9):** `veggie-squad-thumbnail-1280x720.jpg`
+- **English subtitles:** `veggie-squad.en.srt` (same timing for both versions)
 - **Song:** "Eat Your Veggies!" (The Veggie Squad Song)
 
 ---
@@ -72,6 +73,7 @@ kids songs, songs for kids, eat your veggies, vegetable song, veggie song, veggi
 - Audience: **Yes, it's made for kids** (required for children's content under COPPA rules)
 - Category: **Education** (or Music)
 - Language: **English**
+- Subtitles: upload `veggie-squad.en.srt` (the same file works for both versions)
 
 ---
 
@@ -117,42 +119,5 @@ eat your veggies song, veggie squad, vegetable song for kids, healthy eating son
 - Audience: **Yes, it's made for kids**
 - Category: **Education**
 - Thumbnail: `veggie-squad-thumbnail-1280x720.jpg`
-- End screen: add a **Subscribe** element and a link to the Short (the video is 28 s, and end screens need at least 25 s, so keep them short)
-
----
-
-## TikTok
-
-**Caption:**
-```
-Eat your veggies, yum, yum, yum! 🥕🍅🥦🥒 Meet the Veggie Squad, sing along with your little ones! 🎶 #kidssongs #eatyourveggies #healthykids #toddlersongs #preschool #singalong #learningisfun #momsoftiktok #kidsmusic #cartoon
-```
-
-**Settings:** turn on the **AI-generated content** label (the music was made with AI); allow Duet/Stitch for reach.
-
----
-
-## Instagram Reels
-
-**Caption:**
-```
-🥕🍅 Eat your veggies, yum, yum, yum! 🥦🥒
-
-Meet the Veggie Squad, four little friends who make healthy eating FUN. Sing and dance along with your kids! 🎶
-
-Which veggie is your little one's favorite? Tell us in the comments 👇
-
-#kidssongs #eatyourveggies #healthykids #toddlerlife #singalong
-```
-(Instagram currently works best with up to 5 hashtags.)
-
-**Settings:** use `veggie-squad-cover.jpg` as the Reel cover; add the "AI info" label if offered.
-
----
-
-## Channel name ideas
-- **Veggie Squad Tunes**
-- **Yummy Tunes for Kids**
-- **Happy Garden Songs**
-
-*(Check that the name is free on YouTube, TikTok and Instagram before you use it.)*
+- Subtitles: **Subtitles → Add language → English → Upload file → With timing** → `veggie-squad.en.srt`
+- Note: cards and end screens are switched off by YouTube on "made for kids" videos, so don't plan the video around them.
