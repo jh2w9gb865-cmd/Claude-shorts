@@ -11,14 +11,20 @@ import {
 import type { Layout } from "./layout";
 import { OUTLINE, SW, clamp } from "./shared";
 
-export const Sky: React.FC = () => (
-  <AbsoluteFill
-    style={{
-      background:
-        "linear-gradient(180deg, #2fb8ff 0%, #6fd2ff 45%, #c4f1ff 75%, #e9fbff 100%)",
-    }}
-  />
-);
+export const SKIES = {
+  day: "linear-gradient(180deg, #2fb8ff 0%, #6fd2ff 45%, #c4f1ff 75%, #e9fbff 100%)",
+  sunset: "linear-gradient(180deg, #ff7eb3 0%, #ff9f6e 40%, #ffd27a 72%, #fff1c1 100%)",
+  magic: "linear-gradient(180deg, #6a4cff 0%, #a66bff 40%, #ff9ad5 75%, #ffe3f3 100%)",
+};
+export type SkyTheme = keyof typeof SKIES;
+
+/** Lets a compilation repaint the sky of a song without touching the song itself. */
+export const SkyContext = React.createContext<SkyTheme>("day");
+
+export const Sky: React.FC = () => {
+  const theme = React.useContext(SkyContext);
+  return <AbsoluteFill style={{ background: SKIES[theme] }} />;
+};
 
 export const Sun: React.FC<{ x: number; y: number }> = ({ x, y }) => {
   const frame = useCurrentFrame();
