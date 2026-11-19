@@ -111,7 +111,7 @@ export const IntroTitle: React.FC<{ exitAt: number }> = ({ exitAt }) => {
         transformOrigin: "50% 50%",
       }}
     >
-      <BouncyTitle lines={["Овощная", "команда!"]} start={6} size={140} />
+      <BouncyTitle lines={["Veggie", "Squad!"]} start={6} size={165} />
     </div>
   );
 };
@@ -130,7 +130,7 @@ export const FinalTitle: React.FC<{ startAt: number }> = ({ startAt }) => {
         justifyContent: "center",
       }}
     >
-      <BouncyTitle lines={["Ешь овощи —", "будь здоров!"]} start={startAt} size={118} />
+      <BouncyTitle lines={["Eat Your", "Veggies!"]} start={startAt} size={150} />
     </div>
   );
 };

@@ -21,10 +21,10 @@ type Cast = {
 
 // Back row stands on the far hill, front row on the near meadow.
 const CAST: Cast[] = [
-  { kind: "tomato", x: 790, y: 1780, enterAt: 85, talkFrom: 95, talkTo: 150, phase: 1, name: "Я — Помидор!", nameColor: "#ff3b3b", line: "Для сильного сердца!" },
-  { kind: "broccoli", x: 290, y: 1780, enterAt: 150, talkFrom: 160, talkTo: 212, phase: 2, name: "Я — Брокколи!", nameColor: "#2fae4a", line: "Даю много силы!" },
-  { kind: "carrot", x: 290, y: 1330, enterAt: 212, talkFrom: 222, talkTo: 272, phase: 3, name: "Я — Морковка!", nameColor: "#ff8a1f", line: "Для зорких глазок!" },
-  { kind: "cucumber", x: 790, y: 1330, enterAt: 272, talkFrom: 282, talkTo: DANCE_AT, phase: 4, name: "Я — Огурчик!", nameColor: "#2fb34a", line: "Хрум-хрум, вкусно!" },
+  { kind: "tomato", x: 790, y: 1780, enterAt: 85, talkFrom: 95, talkTo: 150, phase: 1, name: "I'm Tomato!", nameColor: "#ff3b3b", line: "For a strong heart!" },
+  { kind: "broccoli", x: 290, y: 1780, enterAt: 150, talkFrom: 160, talkTo: 212, phase: 2, name: "I'm Broccoli!", nameColor: "#2fae4a", line: "I make you strong!" },
+  { kind: "carrot", x: 290, y: 1330, enterAt: 212, talkFrom: 222, talkTo: 272, phase: 3, name: "I'm Carrot!", nameColor: "#ff8a1f", line: "For super-sharp eyes!" },
+  { kind: "cucumber", x: 790, y: 1330, enterAt: 272, talkFrom: 282, talkTo: DANCE_AT, phase: 4, name: "I'm Cucumber!", nameColor: "#2fb34a", line: "Crunch, crunch, yum!" },
 ];
 
 // Draw back row first so the front row overlaps it.
