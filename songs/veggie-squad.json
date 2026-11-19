@@ -1,0 +1,35 @@
+{
+  "model_id": "music_v2_5",
+  "composition_plan": {
+    "chunks": [
+      {
+        "text": "[Verse]\nRed tomato, round and bright,\nkeeps your heart beating just right!\nBroccoli makes you big and strong,\ncarrot helps you see all day long!\nCucumber goes crunch, crunch, crunch!",
+        "duration_ms": 14000,
+        "positive_styles": [
+          "happy children's song",
+          "upbeat kids pop",
+          "bright cheerful female lead vocal",
+          "ukulele and glockenspiel",
+          "hand claps",
+          "bouncy bassline",
+          "120 bpm",
+          "clear simple lyrics",
+          "great production quality"
+        ],
+        "negative_styles": ["sad", "dark", "heavy distortion", "explicit"]
+      },
+      {
+        "text": "[Chorus]\nEat your veggies, yum, yum, yum!\nVeggie Squad is so much fun!\nWave your hands and jump up high,\neat your veggies, reach the sky! Hey!",
+        "duration_ms": 14000,
+        "positive_styles": [
+          "catchy sing-along chorus",
+          "kids choir backing vocals",
+          "energetic and joyful",
+          "hand claps",
+          "big happy ending"
+        ],
+        "negative_styles": ["sad", "dark"]
+      }
+    ]
+  }
+}
