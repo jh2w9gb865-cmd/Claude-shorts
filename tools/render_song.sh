@@ -34,13 +34,14 @@ for sec in s["sections"]:
 EOF
 )
 common=(--is-production=false --browser-executable="$B" --log=error)
-npx remotion render "${id}Short" "$P/raw-short.mp4" "${common[@]}" --concurrency=4
-ffmpeg -v error -y -i "$P/raw-short.mp4" -c:v libx264 -preset medium -crf 24 -pix_fmt yuv420p -c:a copy -movflags +faststart "$P/$slug-short.mp4"
+vq=(--jpeg-quality=95 --audio-bitrate=320k)
+npx remotion render "${id}Short" "$P/raw-short.mp4" "${common[@]}" "${vq[@]}" --crf=14 --concurrency=4
+ffmpeg -v error -y -i "$P/raw-short.mp4" -c:v libx264 -preset slow -crf 18 -profile:v high -pix_fmt yuv420p -c:a copy -movflags +faststart "$P/$slug-short.mp4"
 rm -f "$P/raw-short.mp4"
-npx remotion render "${id}Wide" "$P/raw-wide.mp4" "${common[@]}" --concurrency=4
-ffmpeg -v error -y -i "$P/raw-wide.mp4" -c:v libx264 -preset medium -crf 25 -pix_fmt yuv420p -c:a copy -movflags +faststart "$P/$slug-16x9.mp4"
+npx remotion render "${id}Wide" "$P/raw-wide.mp4" "${common[@]}" "${vq[@]}" --crf=14 --concurrency=4
+ffmpeg -v error -y -i "$P/raw-wide.mp4" -c:v libx264 -preset slow -crf 18 -profile:v high -pix_fmt yuv420p -c:a copy -movflags +faststart "$P/$slug-16x9.mp4"
 rm -f "$P/raw-wide.mp4"
-npx remotion still "${id}Short" "$P/$slug-cover.jpg" --frame="$cover" --image-format=jpeg --jpeg-quality=92 "${common[@]}"
-npx remotion still "${id}Wide" "$P/$slug-thumbnail-1280x720.jpg" --frame="$still" --scale=0.6667 --image-format=jpeg --jpeg-quality=92 "${common[@]}"
+npx remotion still "${id}Short" "$P/$slug-cover.jpg" --frame="$cover" --image-format=jpeg --jpeg-quality=95 "${common[@]}"
+npx remotion still "${id}Wide" "$P/$slug-thumbnail-1280x720.jpg" --frame="$still" --scale=0.6667 --image-format=jpeg --jpeg-quality=95 "${common[@]}"
 cd "$ROOT" && python3 -I tools/song.py package "$slug"
 echo "DONE $slug $(du -sh "$P" | cut -f1)"

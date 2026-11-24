@@ -14,8 +14,9 @@ Reply to the owner in **Armenian**. Files live in `publishing/<slug>/`.
    ```bash
    cd /home/user/Claude-shorts/cartoon && [ -d node_modules ] || npm ci
    npx remotion render <Id><Short|Wide> raw.mp4 --is-production=false \
+     --jpeg-quality=95 --audio-bitrate=320k --crf=14 \
      --browser-executable=/opt/pw-browsers/chromium_headless_shell-1243/chrome-headless-shell-linux64/chrome-headless-shell
-   ffmpeg -y -i raw.mp4 -c:v libx264 -crf 25 -pix_fmt yuv420p -c:a copy -movflags +faststart ../publishing/<slug>/<video> && rm raw.mp4
+   ffmpeg -y -i raw.mp4 -c:v libx264 -preset slow -crf 18 -pix_fmt yuv420p -c:a copy -movflags +faststart ../publishing/<slug>/<video> && rm raw.mp4
    ```
    If the image, subtitles or `.md` are missing too, run `tools/render_song.sh <slug>` (it rebuilds everything, ~10 min).
    If a render will take a while, send the text message (step 3) first and the files after.
