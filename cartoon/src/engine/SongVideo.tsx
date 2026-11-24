@@ -204,8 +204,8 @@ const LyricCard: React.FC<{ tl: Timed[]; wide: boolean }> = ({ tl, wide }) => {
       }}
     >
       {word ? (
-        <div style={{ rotate: `${Math.sin(frame * 0.2) * 3}deg` }}>
-          <OutlinedWord text={word.word} color={word.color} size={wide ? 118 : 130} />
+        <div style={{ rotate: `${Math.sin(frame * 0.2) * 3}deg`, whiteSpace: "nowrap" }}>
+          <OutlinedWord text={word.word} color={word.color} size={Math.min(wide ? 118 : 130, ((wide ? 1150 : 860) / Math.max(1, word.word.length)) * 1.45)} />
         </div>
       ) : null}
       <div
