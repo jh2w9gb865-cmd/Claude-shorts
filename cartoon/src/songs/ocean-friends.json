@@ -1,0 +1,228 @@
+{
+  "slug": "ocean-friends",
+  "id": "OceanFriends",
+  "audio": "audio/ocean-friends.mp3",
+  "durationFrames": 3781,
+  "scene": "ocean",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "calypso steel drums",
+    "sunny reggae-pop bounce"
+  ],
+  "title": {
+    "portrait": [
+      "Ocean",
+      "Friends!"
+    ],
+    "landscape": [
+      "Ocean Friends!"
+    ]
+  },
+  "outroText": "SPLASH!",
+  "cast": [
+    {
+      "kind": "crab",
+      "name": "Crabby",
+      "emoji": "🦀",
+      "about": "walks sideways and pinches"
+    },
+    {
+      "kind": "fish",
+      "name": "Finny Fish",
+      "emoji": "🐠",
+      "about": "swims fast with a swish of his tail"
+    },
+    {
+      "kind": "octopus",
+      "name": "Olivia Octopus",
+      "emoji": "🐙",
+      "about": "waves with eight long arms"
+    },
+    {
+      "kind": "turtle",
+      "name": "Tilly Turtle",
+      "emoji": "🐢",
+      "about": "slow, steady and wise"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Down in the ocean, deep and blue,",
+        "little fish says, 'How do you do?'",
+        "Swim, swim, swish your tail,",
+        "follow me, we'll find a whale!"
+      ],
+      "focus": [
+        1
+      ],
+      "words": [
+        null,
+        {
+          "word": "FISH",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "SWIM",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "WHALE",
+          "color": "#2fa8ff"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Splash, splash, ocean friends,",
+        "the fun in the sea never ends!",
+        "Swim, swim, wiggle and wave,",
+        "let's explore, come on, be brave!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Octopus has eight long arms,",
+        "waving hello with all her charms!",
+        "Crabby walks from side to side,",
+        "pinch, pinch, pinch, then runs to hide!"
+      ],
+      "focus": [
+        2,
+        0
+      ],
+      "words": [
+        {
+          "word": "8 ARMS",
+          "color": "#8e5bff"
+        },
+        null,
+        {
+          "word": "CRAB",
+          "color": "#ff3b3b"
+        },
+        {
+          "word": "PINCH!",
+          "color": "#ff3b3b"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Splash, splash, ocean friends,",
+        "the fun in the sea never ends!",
+        "Swim, swim, wiggle and wave,",
+        "let's explore, come on, be brave!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Turtle swims so slow and steady,",
+        "with her shell, she's always ready!",
+        "Bubbles rising, pop, pop, pop,",
+        "ocean dancing, never stop!"
+      ],
+      "focus": [
+        3
+      ],
+      "words": [
+        {
+          "word": "TURTLE",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "SHELL",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "BUBBLES",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Splash, splash, ocean friends,",
+        "the fun in the sea never ends!",
+        "Swim, swim, wiggle and wave,",
+        "let's explore, come on, be brave!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Splash, splash, ocean friends,",
+        "the fun in the sea never ends!",
+        "Swim, swim, wiggle and wave,",
+        "let's explore, come on, be brave!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Splash!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Ocean Friends",
+    "shortTitle": "Ocean Friends 🐠 Sea Animals Song for Kids!",
+    "longTitle": "Ocean Friends 🐠 Sea Animals Song for Kids | Fish, Octopus, Crab & Turtle | Sunny Sprouts",
+    "hook": "🐠🐙🦀🐢 Dive into the deep blue sea and meet our ocean friends!",
+    "about": "A splashy sea animals song. Finny Fish swishes his tail, Olivia Octopus waves eight long arms, Crabby walks sideways and Tilly Turtle swims slow and steady, all among bubbles and seaweed.",
+    "learn": [
+      "sea animals: fish, octopus, crab, turtle, whale",
+      "an octopus has 8 arms",
+      "crabs walk sideways",
+      "swimming, waving and wiggling"
+    ],
+    "tags": [
+      "ocean animals song",
+      "sea animals for kids",
+      "under the sea song for kids",
+      "fish song",
+      "octopus song",
+      "sea creatures for kids",
+      "ocean song for toddlers",
+      "animal songs for kids",
+      "summer songs for kids",
+      "learning songs",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#oceananimals",
+      "#seaanimals",
+      "#kidssongs",
+      "#oceanfriends"
+    ],
+    "playlist": "Animal Songs"
+  }
+}

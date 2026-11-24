@@ -1,0 +1,211 @@
+{
+  "slug": "goodnight-stars",
+  "id": "GoodnightStars",
+  "audio": "audio/goodnight-stars.mp3",
+  "durationFrames": 3601,
+  "scene": "night",
+  "sky": "day",
+  "mood": "calm",
+  "styles": [],
+  "title": {
+    "portrait": [
+      "Goodnight,",
+      "Sleepy Stars"
+    ],
+    "landscape": [
+      "Goodnight, Sleepy Stars"
+    ]
+  },
+  "outroText": "HOORAY!",
+  "cast": [
+    {
+      "kind": "bunny",
+      "name": "Bella Bunny",
+      "emoji": "🐰",
+      "about": "snuggles into her cozy bed"
+    },
+    {
+      "kind": "star",
+      "name": "Twinkle Star",
+      "emoji": "⭐",
+      "about": "the sleepiest little star in the sky"
+    },
+    {
+      "kind": "bear",
+      "name": "Teddy Bear",
+      "emoji": "🧸",
+      "about": "loves a goodnight hug"
+    },
+    {
+      "kind": "chick",
+      "name": "Pip the Chick",
+      "emoji": "🐥",
+      "about": "says the softest 'peep, goodnight'"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "The moon is up, the sky is blue,",
+        "the little stars are sleepy too.",
+        "Yawn, yawn, stretch so tall,",
+        "it's time to rest, goodnight to all."
+      ],
+      "focus": [
+        1
+      ],
+      "words": [
+        {
+          "word": "MOON",
+          "color": "#ffc300"
+        },
+        null,
+        {
+          "word": "YAWN",
+          "color": "#8e5bff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Goodnight, sleepy stars,",
+        "twinkle soft and slow,",
+        "close your little eyes,",
+        "dream and grow, grow, grow."
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Bunny hops into her bed,",
+        "Teddy lays his sleepy head.",
+        "Pajamas on and teeth all clean,",
+        "the coziest you've ever seen."
+      ],
+      "focus": [
+        0,
+        2
+      ],
+      "words": [
+        {
+          "word": "BED",
+          "color": "#ff4f9a"
+        },
+        null,
+        {
+          "word": "PAJAMAS",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Goodnight, sleepy stars,",
+        "twinkle soft and slow,",
+        "close your little eyes,",
+        "dream and grow, grow, grow."
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Little Chick says, 'Peep, goodnight,'",
+        "Mommy gives a hug so tight.",
+        "Fluffy pillow, blanket warm,",
+        "safe and sound until the morn."
+      ],
+      "focus": [
+        3,
+        1
+      ],
+      "words": [
+        null,
+        {
+          "word": "HUG",
+          "color": "#ff4f9a"
+        },
+        {
+          "word": "PILLOW",
+          "color": "#8e5bff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Goodnight, sleepy stars,",
+        "twinkle soft and slow,",
+        "close your little eyes,",
+        "dream and grow, grow, grow."
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Goodnight, sleepy stars,",
+        "twinkle soft and slow,",
+        "close your little eyes,",
+        "dream and grow, grow, grow."
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Goodnight, Sleepy Stars",
+    "shortTitle": "Goodnight Sleepy Stars 🌙 Bedtime Lullaby",
+    "longTitle": "Goodnight, Sleepy Stars 🌙 Bedtime Lullaby for Babies & Toddlers | Sunny Sprouts",
+    "hook": "🌙 A soft, gentle lullaby to help little ones wind down and drift off to sleep.",
+    "about": "A calm bedtime song with Twinkle Star, Bella Bunny, Teddy Bear and Pip the Chick. Pajamas on, teeth all clean, a big hug and a fluffy pillow: time to say goodnight.",
+    "learn": [
+      "a calm bedtime routine",
+      "bedtime words: moon, stars, pillow, pajamas",
+      "winding down before sleep",
+      "saying goodnight"
+    ],
+    "tags": [
+      "lullaby for babies",
+      "bedtime songs for kids",
+      "goodnight song",
+      "sleep music for kids",
+      "lullaby for toddlers",
+      "bedtime lullaby",
+      "baby sleep song",
+      "calm songs for kids",
+      "night time song",
+      "twinkle stars lullaby",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#lullaby",
+      "#bedtime",
+      "#babysleep",
+      "#goodnight"
+    ],
+    "playlist": "Bedtime Lullabies",
+    "ages": "0–5"
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "slug": "shapes",
+  "id": "Shapes",
+  "audio": "audio/shapes.mp3",
+  "durationFrames": 3781,
+  "scene": "meadow",
+  "sky": "sunset",
+  "mood": "party",
+  "styles": [
+    "bouncy marimba and claps"
+  ],
+  "title": {
+    "portrait": [
+      "Shapes All",
+      "Around!"
+    ],
+    "landscape": [
+      "Shapes All Around!"
+    ]
+  },
+  "outroText": "HOORAY!",
+  "cast": [
+    {
+      "kind": "circle",
+      "name": "Cici Circle",
+      "emoji": "🔴",
+      "about": "round like a ball"
+    },
+    {
+      "kind": "square",
+      "name": "Sid Square",
+      "emoji": "🟦",
+      "about": "has four sides and four corners"
+    },
+    {
+      "kind": "triangle",
+      "name": "Tina Triangle",
+      "emoji": "🔺",
+      "about": "has three sides, like a slice of pizza"
+    },
+    {
+      "kind": "star",
+      "name": "Twinkle Star",
+      "emoji": "⭐",
+      "about": "has five points that shine"
+    },
+    {
+      "kind": "heart",
+      "name": "Hattie Heart",
+      "emoji": "💗",
+      "about": "full of love"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "I'm a circle, round and round,",
+        "like a ball that's on the ground!",
+        "I'm a square with sides of four,",
+        "like a window or a door!"
+      ],
+      "focus": [
+        0,
+        1
+      ],
+      "words": [
+        {
+          "word": "CIRCLE",
+          "color": "#ff3b3b"
+        },
+        null,
+        {
+          "word": "SQUARE",
+          "color": "#2fa8ff"
+        },
+        null
+      ],
+      "delayMs": 8000
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shapes, shapes, all around,",
+        "look up high and look down low!",
+        "Shapes, shapes, can be found",
+        "everywhere that you go!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "I'm a triangle, one, two, three,",
+        "like a slice of pizza, see?",
+        "I'm a star up in the night,",
+        "five points shining, oh so bright!"
+      ],
+      "focus": [
+        2,
+        3
+      ],
+      "words": [
+        {
+          "word": "TRIANGLE",
+          "color": "#3ec43e"
+        },
+        null,
+        {
+          "word": "STAR",
+          "color": "#ffc300"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shapes, shapes, all around,",
+        "look up high and look down low!",
+        "Shapes, shapes, can be found",
+        "everywhere that you go!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "I'm a heart, I'm full of love,",
+        "like a hug from up above!",
+        "Circle, square, triangle, star,",
+        "shapes are everywhere you are!"
+      ],
+      "focus": [
+        4
+      ],
+      "words": [
+        {
+          "word": "HEART",
+          "color": "#ff4f9a"
+        },
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shapes, shapes, all around,",
+        "look up high and look down low!",
+        "Shapes, shapes, can be found",
+        "everywhere that you go!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shapes, shapes, all around,",
+        "look up high and look down low!",
+        "Shapes, shapes, can be found",
+        "everywhere that you go!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Shapes, hooray!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Shapes All Around",
+    "shortTitle": "Shapes Song 🔺 Circle, Square, Triangle, Star!",
+    "longTitle": "Shapes All Around 🔺 Shapes Song for Kids | Learn Circle, Square, Triangle, Star & Heart | Sunny Sprouts",
+    "hook": "🔺 Circle, square, triangle, star and heart! Let's find shapes all around us.",
+    "about": "A fun shapes song for toddlers and preschoolers. Cici Circle, Sid Square, Tina Triangle, Twinkle Star and Hattie Heart introduce themselves and show where you can find each shape: a ball, a door, a slice of pizza and the night sky.",
+    "learn": [
+      "5 shapes: circle, square, triangle, star, heart",
+      "counting sides: 3 and 4",
+      "finding shapes in everyday things",
+      "shape words in English"
+    ],
+    "tags": [
+      "shapes song",
+      "shapes for kids",
+      "learn shapes",
+      "shapes song for toddlers",
+      "circle square triangle",
+      "2d shapes song",
+      "preschool learning videos",
+      "educational songs for kids",
+      "shapes and colors for kids",
+      "learning songs",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#shapessong",
+      "#learnshapes",
+      "#kidssongs",
+      "#preschool"
+    ],
+    "playlist": "Learning Songs"
+  }
+}

@@ -1,0 +1,226 @@
+{
+  "slug": "santa-helpers",
+  "id": "SantaHelpers",
+  "audio": "audio/santa-helpers.mp3",
+  "durationFrames": 3781,
+  "scene": "snow",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "sleigh bells and glockenspiel",
+    "festive Christmas pop"
+  ],
+  "title": {
+    "portrait": [
+      "Santa's Little",
+      "Helpers!"
+    ],
+    "landscape": [
+      "Santa's Little Helpers!"
+    ]
+  },
+  "outroText": "HO HO HO!",
+  "cast": [
+    {
+      "kind": "elfgreen",
+      "name": "Elfie",
+      "emoji": "🧝",
+      "about": "wraps presents faster than anyone"
+    },
+    {
+      "kind": "santa",
+      "name": "Santa",
+      "emoji": "🎅",
+      "about": "jolly, kind and always smiling"
+    },
+    {
+      "kind": "reindeer",
+      "name": "Rudy Reindeer",
+      "emoji": "🦌",
+      "about": "ready to pull the sleigh"
+    },
+    {
+      "kind": "elfred",
+      "name": "Jingles",
+      "emoji": "🧝",
+      "about": "ties the prettiest bows"
+    },
+    {
+      "kind": "gingerbread",
+      "name": "Ginger",
+      "emoji": "🍪",
+      "about": "the sweetest helper in the workshop"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "In the workshop, tap, tap, tap,",
+        "elves are busy, wrap, wrap, wrap!",
+        "Paper, ribbon, bows on top,",
+        "Santa's helpers never stop!"
+      ],
+      "focus": [
+        0,
+        3
+      ],
+      "words": [
+        {
+          "word": "TAP",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "WRAP",
+          "color": "#ff3b3b"
+        },
+        {
+          "word": "BOWS",
+          "color": "#ff4f9a"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Ho, ho, ho, here we go,",
+        "Santa's helpers in the snow!",
+        "Wrap a present, make a toy,",
+        "share the love and share the joy!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Reindeer stretch and stand in line,",
+        "Gingerbread says, 'Looking fine!'",
+        "Load the sleigh up, one, two, three,",
+        "gifts for you and gifts for me!"
+      ],
+      "focus": [
+        2,
+        4
+      ],
+      "words": [
+        null,
+        null,
+        {
+          "word": "1, 2, 3!",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "GIFTS",
+          "color": "#ff3b3b"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Ho, ho, ho, here we go,",
+        "Santa's helpers in the snow!",
+        "Wrap a present, make a toy,",
+        "share the love and share the joy!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Santa smiles and waves goodbye,",
+        "watch the sleigh fly through the sky!",
+        "Be kind and share, and you will see,",
+        "the best gift is you and me!"
+      ],
+      "focus": [
+        1
+      ],
+      "words": [
+        null,
+        null,
+        {
+          "word": "SHARE",
+          "color": "#ff4f9a"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Ho, ho, ho, here we go,",
+        "Santa's helpers in the snow!",
+        "Wrap a present, make a toy,",
+        "share the love and share the joy!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Ho, ho, ho, here we go,",
+        "Santa's helpers in the snow!",
+        "Wrap a present, make a toy,",
+        "share the love and share the joy!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Ho, ho, ho!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Santa's Little Helpers",
+    "shortTitle": "Santa's Little Helpers 🎅 Ho Ho Ho, Here We Go!",
+    "longTitle": "Santa's Little Helpers 🎅 Christmas Song for Kids | Elves, Reindeer & Santa | Sunny Sprouts",
+    "hook": "🎅 Ho, ho, ho! Let's help Santa wrap the presents and load the sleigh!",
+    "about": "A cheerful Christmas song about teamwork and kindness. Santa's elves tap, wrap and tie bows, Rudy Reindeer gets ready, and everyone learns that sharing is the best gift of all.",
+    "learn": [
+      "Christmas words: workshop, sleigh, present, ribbon",
+      "counting to three",
+      "teamwork and helping",
+      "kindness and sharing"
+    ],
+    "tags": [
+      "santa song for kids",
+      "christmas songs for kids",
+      "santa claus song",
+      "elves song",
+      "reindeer song",
+      "christmas songs for toddlers",
+      "kids christmas music",
+      "christmas cartoon for kids",
+      "ho ho ho song",
+      "holiday songs for kids",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#christmassongs",
+      "#santaclaus",
+      "#kidssongs",
+      "#christmas"
+    ],
+    "playlist": "Christmas Songs for Kids"
+  }
+}

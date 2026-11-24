@@ -2,6 +2,9 @@ import { Composition, Folder } from "remotion";
 import { VeggieCartoon } from "./cartoon/VeggieCartoon";
 import { ChannelAvatar, ChannelBanner } from "./channel/ChannelArt";
 import { ColorsCartoon } from "./colors/ColorsCartoon";
+import { CharacterSheet } from "./engine/Sheet";
+import { SongVideo, shortEnd } from "./engine/SongVideo";
+import { SONGS } from "./songs";
 import { COMPILATION_LEN, Compilation, CompilationThumb, MixTeaserShort, TEASER_LEN } from "./compilation/Compilation";
 
 export const RemotionRoot: React.FC = () => {
@@ -15,6 +18,29 @@ export const RemotionRoot: React.FC = () => {
         <Composition id="MixColorsVeggiesThumb" component={CompilationThumb} durationInFrames={1322} fps={30} width={1920} height={1080} />
       </Folder>
       <ChannelRoot />
+      {SONGS.map((spec) => (
+        <Folder key={spec.id} name={spec.id}>
+          <Composition
+            id={`${spec.id}Short`}
+            component={SongVideo}
+            durationInFrames={shortEnd(spec)}
+            fps={30}
+            width={1080}
+            height={1920}
+            defaultProps={{ spec, short: true }}
+          />
+          <Composition
+            id={`${spec.id}Wide`}
+            component={SongVideo}
+            durationInFrames={spec.durationFrames}
+            fps={30}
+            width={1920}
+            height={1080}
+            defaultProps={{ spec, short: false }}
+          />
+        </Folder>
+      ))}
+      <Composition id="DevCharacterSheet" component={CharacterSheet} durationInFrames={30} fps={30} width={2700} height={1800} />
     </>
   );
 };

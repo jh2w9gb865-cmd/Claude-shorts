@@ -1,0 +1,231 @@
+{
+  "slug": "head-tummy",
+  "id": "HeadTummy",
+  "audio": "audio/head-tummy.mp3",
+  "durationFrames": 3781,
+  "scene": "meadow",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "bouncy funk bass and claps"
+  ],
+  "title": {
+    "portrait": [
+      "Head, Tummy,",
+      "Knees & Feet!"
+    ],
+    "landscape": [
+      "Head, Tummy, Knees and Feet!"
+    ]
+  },
+  "outroText": "YAY!",
+  "cast": [
+    {
+      "kind": "bear",
+      "name": "Teddy Bear",
+      "emoji": "🧸",
+      "about": "the best tummy tapper"
+    },
+    {
+      "kind": "bunny",
+      "name": "Bella Bunny",
+      "emoji": "🐰",
+      "about": "wiggles her nose"
+    },
+    {
+      "kind": "fox",
+      "name": "Finn Fox",
+      "emoji": "🦊",
+      "about": "waves his arms up high"
+    },
+    {
+      "kind": "frog",
+      "name": "Freddie Frog",
+      "emoji": "🐸",
+      "about": "touches his toes super fast"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Touch your head, tap, tap, tap,",
+        "touch your tummy, clap, clap, clap!",
+        "Touch your knees and bend down low,",
+        "touch your feet and off we go!"
+      ],
+      "focus": [
+        0
+      ],
+      "words": [
+        {
+          "word": "HEAD",
+          "color": "#ff3b3b"
+        },
+        {
+          "word": "TUMMY",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "KNEES",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "FEET",
+          "color": "#2fa8ff"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Head, tummy, knees and feet,",
+        "move your body to the beat!",
+        "Head, tummy, knees and feet,",
+        "dancing is a special treat!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Wiggle your nose and blink your eyes,",
+        "wave your arms up to the skies!",
+        "Shake your shoulders, one, two, three,",
+        "rub your elbows, look at me!"
+      ],
+      "focus": [
+        1,
+        2
+      ],
+      "words": [
+        {
+          "word": "NOSE",
+          "color": "#ff4f9a"
+        },
+        {
+          "word": "ARMS",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "SHOULDERS",
+          "color": "#8e5bff"
+        },
+        {
+          "word": "ELBOWS",
+          "color": "#2fa8ff"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Head, tummy, knees and feet,",
+        "move your body to the beat!",
+        "Head, tummy, knees and feet,",
+        "dancing is a special treat!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Faster now, are you ready? Go!",
+        "Head, tummy, knees and toes!",
+        "Slower now, so nice and slow,",
+        "head, tummy, knees... and toes!"
+      ],
+      "focus": [
+        3,
+        0
+      ],
+      "words": [
+        {
+          "word": "FASTER!",
+          "color": "#ff3b3b"
+        },
+        null,
+        {
+          "word": "slower...",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Head, tummy, knees and feet,",
+        "move your body to the beat!",
+        "Head, tummy, knees and feet,",
+        "dancing is a special treat!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Head, tummy, knees and feet,",
+        "move your body to the beat!",
+        "Head, tummy, knees and feet,",
+        "dancing is a special treat!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Great job!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Head, Tummy, Knees and Feet",
+    "shortTitle": "Head, Tummy, Knees & Feet 🧸 Body Parts Song!",
+    "longTitle": "Head, Tummy, Knees and Feet 🧸 Body Parts Song for Kids | Action Song | Sunny Sprouts",
+    "hook": "🧸 Touch your head, tap your tummy, bend your knees and wiggle your feet!",
+    "about": "An action song that teaches body parts while kids move along. Teddy Bear, Bella Bunny, Finn Fox and Freddie Frog touch their head, tummy, knees and feet, then wiggle noses, wave arms, shake shoulders and try it fast and slow!",
+    "learn": [
+      "body parts: head, tummy, knees, feet, nose, eyes, arms, shoulders, elbows",
+      "fast and slow",
+      "following actions",
+      "moving to music"
+    ],
+    "tags": [
+      "body parts song",
+      "head tummy knees and feet",
+      "body parts for kids",
+      "action songs for kids",
+      "movement songs for toddlers",
+      "brain break for kids",
+      "learn body parts",
+      "exercise song for kids",
+      "dance songs for kids",
+      "learning songs",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#bodypartssong",
+      "#actionsongs",
+      "#kidssongs",
+      "#preschool"
+    ],
+    "playlist": "Learning Songs"
+  }
+}

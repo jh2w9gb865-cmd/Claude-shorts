@@ -1,0 +1,246 @@
+{
+  "slug": "days-of-week",
+  "id": "DaysOfWeek",
+  "audio": "audio/days-of-week.mp3",
+  "durationFrames": 3781,
+  "scene": "meadow",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "funky kids dance pop"
+  ],
+  "title": {
+    "portrait": [
+      "Days of the",
+      "Week Dance!"
+    ],
+    "landscape": [
+      "Days of the Week Dance!"
+    ]
+  },
+  "outroText": "HOORAY!",
+  "cast": [
+    {
+      "kind": "ladybug",
+      "name": "Lily Ladybug",
+      "emoji": "🐞",
+      "about": "Monday's clapper"
+    },
+    {
+      "kind": "fox",
+      "name": "Finn Fox",
+      "emoji": "🦊",
+      "about": "Tuesday's tapper"
+    },
+    {
+      "kind": "chick",
+      "name": "Pip the Chick",
+      "emoji": "🐥",
+      "about": "Wednesday's wiggler"
+    },
+    {
+      "kind": "frog",
+      "name": "Freddie Frog",
+      "emoji": "🐸",
+      "about": "Thursday's jumper"
+    },
+    {
+      "kind": "bluebird",
+      "name": "Bobby Bluebird",
+      "emoji": "🐦",
+      "about": "Friday's spinner"
+    },
+    {
+      "kind": "bunny",
+      "name": "Bella Bunny",
+      "emoji": "🐰",
+      "about": "Saturday's smiler"
+    },
+    {
+      "kind": "bear",
+      "name": "Teddy Bear",
+      "emoji": "🧸",
+      "about": "loves a Sunday stretch"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "On Monday, clap, clap, clap!",
+        "On Tuesday, tap, tap, tap!",
+        "On Wednesday, wiggle all around,",
+        "on Thursday, jump up off the ground!"
+      ],
+      "focus": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "words": [
+        {
+          "word": "MONDAY",
+          "color": "#ff3b3b"
+        },
+        {
+          "word": "TUESDAY",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "WEDNESDAY",
+          "color": "#ffc300"
+        },
+        {
+          "word": "THURSDAY",
+          "color": "#3ec43e"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Seven days in every week,",
+        "dance with me and take a peek!",
+        "Monday, Tuesday, Wednesday, Thursday,",
+        "Friday, Saturday, Sunday, hooray!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "On Friday, spin, spin, spin!",
+        "On Saturday, grin, grin, grin!",
+        "On Sunday, rest and stretch up tall,",
+        "seven days, we love them all!"
+      ],
+      "focus": [
+        4,
+        5,
+        6
+      ],
+      "words": [
+        {
+          "word": "FRIDAY",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "SATURDAY",
+          "color": "#8e5bff"
+        },
+        {
+          "word": "SUNDAY",
+          "color": "#ff4f9a"
+        },
+        {
+          "word": "7 DAYS",
+          "color": "#3ec43e"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Seven days in every week,",
+        "dance with me and take a peek!",
+        "Monday, Tuesday, Wednesday, Thursday,",
+        "Friday, Saturday, Sunday, hooray!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Can you say them, one by one?",
+        "Seven days of dancing fun!",
+        "Start with Monday, end with Sunday,",
+        "then it starts again on Monday!"
+      ],
+      "words": [
+        null,
+        null,
+        {
+          "word": "MONDAY → SUNDAY",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Seven days in every week,",
+        "dance with me and take a peek!",
+        "Monday, Tuesday, Wednesday, Thursday,",
+        "Friday, Saturday, Sunday, hooray!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Seven days in every week,",
+        "dance with me and take a peek!",
+        "Monday, Tuesday, Wednesday, Thursday,",
+        "Friday, Saturday, Sunday, hooray!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Hooray for the week!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Days of the Week Dance",
+    "shortTitle": "Days of the Week Song 📅 Dance Monday to Sunday!",
+    "longTitle": "Days of the Week Dance 📅 Days of the Week Song for Kids | Monday to Sunday | Sunny Sprouts",
+    "hook": "📅 Monday, Tuesday, Wednesday... Learn all seven days of the week with a dance for every day!",
+    "about": "A dance-along song that teaches the seven days of the week in order. Every day has its own move: clap on Monday, tap on Tuesday, wiggle on Wednesday, jump on Thursday, spin on Friday, grin on Saturday and stretch on Sunday.",
+    "learn": [
+      "the 7 days of the week in order",
+      "day names in English",
+      "a dance move for every day",
+      "the week starts again after Sunday"
+    ],
+    "tags": [
+      "days of the week song",
+      "days of the week for kids",
+      "monday tuesday wednesday song",
+      "7 days of the week",
+      "calendar song for kids",
+      "preschool learning songs",
+      "dance songs for kids",
+      "educational songs for kids",
+      "kindergarten learning",
+      "learning songs",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#daysoftheweek",
+      "#kidssongs",
+      "#learningsongs",
+      "#preschool"
+    ],
+    "playlist": "Learning Songs"
+  }
+}

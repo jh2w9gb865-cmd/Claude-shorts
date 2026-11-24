@@ -1,0 +1,257 @@
+{
+  "slug": "weather",
+  "id": "Weather",
+  "audio": "audio/weather.mp3",
+  "durationFrames": 4261,
+  "scene": "meadow",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "breezy ukulele and whistles"
+  ],
+  "title": {
+    "portrait": [
+      "What's the",
+      "Weather?"
+    ],
+    "landscape": [
+      "What's the Weather?"
+    ]
+  },
+  "outroText": "HOORAY!",
+  "cast": [
+    {
+      "kind": "sun",
+      "name": "Sunny",
+      "emoji": "☀️",
+      "about": "warm, bright and always smiling"
+    },
+    {
+      "kind": "cloud",
+      "name": "Puffy Cloud",
+      "emoji": "☁️",
+      "about": "brings the rain and the wind"
+    },
+    {
+      "kind": "raindrop",
+      "name": "Drippy",
+      "emoji": "💧",
+      "about": "a raindrop who loves puddles"
+    },
+    {
+      "kind": "snowflake",
+      "name": "Flurry",
+      "emoji": "❄️",
+      "about": "a sparkly little snowflake"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Sunny, sunny, shining bright,",
+        "warm and yellow, golden light!",
+        "Put your sunhat on your head,",
+        "let's go play outside instead!"
+      ],
+      "focus": [
+        0
+      ],
+      "words": [
+        {
+          "word": "SUNNY",
+          "color": "#ffc300"
+        },
+        null,
+        {
+          "word": "SUNHAT",
+          "color": "#ff8a1f"
+        },
+        null
+      ],
+      "weather": "sun",
+      "delayMs": 8000
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "What's the weather? Let's go see!",
+        "Look outside with you and me!",
+        "Sunny, rainy, windy, snow,",
+        "every day a different show!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Rainy, rainy, pitter-pat,",
+        "grab your boots and grab your hat!",
+        "Jump in puddles, splish, splash, splash,",
+        "here comes thunder, flash, flash, flash!"
+      ],
+      "focus": [
+        1,
+        2
+      ],
+      "words": [
+        {
+          "word": "RAINY",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "BOOTS",
+          "color": "#ffc300"
+        },
+        {
+          "word": "SPLASH",
+          "color": "#2fa8ff"
+        },
+        null
+      ],
+      "weather": "rain"
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "What's the weather? Let's go see!",
+        "Look outside with you and me!",
+        "Sunny, rainy, windy, snow,",
+        "every day a different show!"
+      ]
+    },
+    {
+      "kind": "bridge",
+      "ms": 16000,
+      "lines": [
+        "Windy, windy, whoosh, whoosh, whoosh,",
+        "leaves go flying, swoosh, swoosh, swoosh!",
+        "Hold your kite and hold on tight,",
+        "up it goes, a windy flight!"
+      ],
+      "focus": [
+        1
+      ],
+      "words": [
+        {
+          "word": "WINDY",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "LEAVES",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "KITE",
+          "color": "#ff4f9a"
+        },
+        null
+      ],
+      "weather": "wind"
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Snowy, snowy, cold and white,",
+        "build a snowman, what a sight!",
+        "Mittens on and scarf so warm,",
+        "catch a snowflake, watch it form!"
+      ],
+      "focus": [
+        3
+      ],
+      "words": [
+        {
+          "word": "SNOWY",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "SNOWMAN",
+          "color": "#8e5bff"
+        },
+        {
+          "word": "MITTENS",
+          "color": "#ff3b3b"
+        },
+        null
+      ],
+      "weather": "snow"
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "What's the weather? Let's go see!",
+        "Look outside with you and me!",
+        "Sunny, rainy, windy, snow,",
+        "every day a different show!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "What's the weather? Let's go see!",
+        "Look outside with you and me!",
+        "Sunny, rainy, windy, snow,",
+        "every day a different show!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Hooray for weather!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "What's the Weather?",
+    "shortTitle": "Weather Song ☀️🌧️ Sunny, Rainy, Windy, Snowy!",
+    "longTitle": "What's the Weather? ☀️ Weather Song for Kids | Sunny, Rainy, Windy & Snowy | Sunny Sprouts",
+    "hook": "☀️🌧️❄️ Is it sunny, rainy, windy or snowy? Let's look outside and sing about the weather!",
+    "about": "A sing-along weather song for toddlers and preschoolers. Sunny, Puffy Cloud, Drippy the Raindrop and Flurry the Snowflake show four kinds of weather, and what to wear for each one: a sunhat, boots, a kite and mittens.",
+    "learn": [
+      "weather words: sunny, rainy, windy, snowy",
+      "what to wear in different weather",
+      "looking outside and describing the day",
+      "seasons and nature"
+    ],
+    "tags": [
+      "weather song",
+      "weather song for kids",
+      "how's the weather song",
+      "sunny rainy windy snowy",
+      "weather for kids",
+      "seasons song for kids",
+      "preschool circle time songs",
+      "rain song for kids",
+      "educational songs for kids",
+      "learning songs",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#weathersong",
+      "#kidssongs",
+      "#learningsongs",
+      "#preschool"
+    ],
+    "playlist": "Learning Songs"
+  }
+}

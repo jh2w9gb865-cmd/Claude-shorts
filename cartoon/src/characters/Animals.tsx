@@ -42,7 +42,7 @@ export const Mouth: React.FC<{ y: number; w?: number; open: number }> = ({ y, w 
 );
 
 /** Arm as a rounded limb pivoting at the shoulder; angle 0 hangs straight down. */
-const Limb: React.FC<{ x: number; y: number; angle: number; color: string; len?: number; w?: number }> = ({
+export const Limb: React.FC<{ x: number; y: number; angle: number; color: string; len?: number; w?: number }> = ({
   x,
   y,
   angle,
@@ -56,7 +56,7 @@ const Limb: React.FC<{ x: number; y: number; angle: number; color: string; len?:
 );
 
 /** Bird wing pivoting at the shoulder. */
-const Wing: React.FC<{ x: number; y: number; angle: number; side: 1 | -1; color: string }> = ({
+export const Wing: React.FC<{ x: number; y: number; angle: number; side: 1 | -1; color: string }> = ({
   x,
   y,
   angle,
@@ -74,7 +74,7 @@ const Wing: React.FC<{ x: number; y: number; angle: number; side: 1 | -1; color:
   </g>
 );
 
-const Feet: React.FC<{ dx: number; color: string; legTop?: number }> = ({ dx, color, legTop }) => (
+export const Feet: React.FC<{ dx: number; color: string; legTop?: number }> = ({ dx, color, legTop }) => (
   <>
     {[-1, 1].map((s) => (
       <g key={s}>

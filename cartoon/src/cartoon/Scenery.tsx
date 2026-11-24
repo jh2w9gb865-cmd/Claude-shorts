@@ -195,7 +195,15 @@ const Flower: React.FC<{ x: number; y: number; color: string; i: number; s?: num
   );
 };
 
-export const Hills: React.FC<{ back: Layout["backHill"]; front: Layout["frontHill"] }> = ({ back, front }) => {
+export type HillColors = { back: string; backShine: string; front: string; frontShine: string };
+const GRASS: HillColors = { back: "#9be15d", backShine: "#c4f58a", front: "#46c33a", frontShine: "#7be06a" };
+
+export const Hills: React.FC<{ back: Layout["backHill"]; front: Layout["frontHill"]; colors?: HillColors; flowers?: boolean }> = ({
+  back,
+  front,
+  colors = GRASS,
+  flowers = true,
+}) => {
   const { width, height } = useVideoConfig();
   return (
     <svg
@@ -203,14 +211,14 @@ export const Hills: React.FC<{ back: Layout["backHill"]; front: Layout["frontHil
       height={height}
       style={{ position: "absolute", inset: 0, overflow: "visible" }}
     >
-      <path d={back.path} fill="#9be15d" stroke={OUTLINE} strokeWidth={SW} />
-      <path d={back.shine} stroke="#c4f58a" strokeWidth={14} strokeLinecap="round" fill="none" />
-      {back.flowers.map((f, i) => (
+      <path d={back.path} fill={colors.back} stroke={OUTLINE} strokeWidth={SW} />
+      <path d={back.shine} stroke={colors.backShine} strokeWidth={14} strokeLinecap="round" fill="none" />
+      {flowers && back.flowers.map((f, i) => (
         <Flower key={`b${i}`} x={f.x} y={f.y} color={f.color} s={f.s} i={i} />
       ))}
-      <path d={front.path} fill="#46c33a" stroke={OUTLINE} strokeWidth={SW} />
-      <path d={front.shine} stroke="#7be06a" strokeWidth={14} strokeLinecap="round" fill="none" />
-      {front.grass.map(([x, y], i) => (
+      <path d={front.path} fill={colors.front} stroke={OUTLINE} strokeWidth={SW} />
+      <path d={front.shine} stroke={colors.frontShine} strokeWidth={14} strokeLinecap="round" fill="none" />
+      {flowers && front.grass.map(([x, y], i) => (
         <g key={`grass${i}`} transform={`translate(${x} ${y})`}>
           {[-14, 0, 14].map((dx) => (
             <path
@@ -224,7 +232,7 @@ export const Hills: React.FC<{ back: Layout["backHill"]; front: Layout["frontHil
           ))}
         </g>
       ))}
-      {front.flowers.map((f, i) => (
+      {flowers && front.flowers.map((f, i) => (
         <Flower key={`f${i}`} x={f.x} y={f.y} color={f.color} s={f.s} i={i + 5} />
       ))}
     </svg>

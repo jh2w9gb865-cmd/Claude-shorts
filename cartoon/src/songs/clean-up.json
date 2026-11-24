@@ -1,0 +1,225 @@
+{
+  "slug": "clean-up",
+  "id": "CleanUp",
+  "audio": "audio/clean-up.mp3",
+  "durationFrames": 3781,
+  "scene": "playroom",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "bouncy ukulele and claps"
+  ],
+  "title": {
+    "portrait": [
+      "Clean Up",
+      "Song!"
+    ],
+    "landscape": [
+      "Clean Up, Clean Up Song!"
+    ]
+  },
+  "outroText": "DONE!",
+  "cast": [
+    {
+      "kind": "bear",
+      "name": "Teddy Bear",
+      "emoji": "🧸",
+      "about": "always first to help"
+    },
+    {
+      "kind": "ball",
+      "name": "Bouncy Ball",
+      "emoji": "⚽",
+      "about": "bounces back to the shelf"
+    },
+    {
+      "kind": "block",
+      "name": "Blocky",
+      "emoji": "🧱",
+      "about": "a toy block who loves a tidy box"
+    },
+    {
+      "kind": "bunny",
+      "name": "Bella Bunny",
+      "emoji": "🐰",
+      "about": "puts the books back in a row"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Toys are here and toys are there,",
+        "toys are scattered everywhere!",
+        "Let's all help and play a game,",
+        "every toy goes home again!"
+      ],
+      "focus": [
+        1
+      ],
+      "words": [
+        null,
+        null,
+        {
+          "word": "GAME",
+          "color": "#ffc300"
+        },
+        {
+          "word": "HOME",
+          "color": "#3ec43e"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Clean up, clean up, everybody help,",
+        "put the toys back on the shelf!",
+        "Clean up, clean up, one, two, three,",
+        "a tidy room for you and me!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Blocks go in the big red bin,",
+        "Teddy waves and jumps right in!",
+        "Balls go bouncing to the shelf,",
+        "look, I did it by myself!"
+      ],
+      "focus": [
+        2,
+        0
+      ],
+      "words": [
+        {
+          "word": "BLOCKS",
+          "color": "#ff3b3b"
+        },
+        {
+          "word": "TEDDY",
+          "color": "#b9773a"
+        },
+        {
+          "word": "BALL",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Clean up, clean up, everybody help,",
+        "put the toys back on the shelf!",
+        "Clean up, clean up, one, two, three,",
+        "a tidy room for you and me!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Books stand up all in a row,",
+        "crayons back in the box they go!",
+        "Look around, it's nice and neat,",
+        "clean-up time is such a treat!"
+      ],
+      "focus": [
+        3,
+        1
+      ],
+      "words": [
+        {
+          "word": "BOOKS",
+          "color": "#8e5bff"
+        },
+        {
+          "word": "CRAYONS",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "NEAT",
+          "color": "#3ec43e"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Clean up, clean up, everybody help,",
+        "put the toys back on the shelf!",
+        "Clean up, clean up, one, two, three,",
+        "a tidy room for you and me!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Clean up, clean up, everybody help,",
+        "put the toys back on the shelf!",
+        "Clean up, clean up, one, two, three,",
+        "a tidy room for you and me!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "All clean!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Clean Up Song",
+    "shortTitle": "Clean Up Song 🧸 Tidy Up Time for Kids!",
+    "longTitle": "Clean Up Song 🧸 Tidy Up Song for Kids | Toddler Routine | Sunny Sprouts",
+    "hook": "🧸 Clean up, clean up, everybody help! Make tidy-up time a fun game.",
+    "about": "A happy tidy-up song for home, daycare and preschool. Teddy Bear, Bouncy Ball, Blocky and Bella Bunny put the blocks in the bin, the balls on the shelf and the books in a row until the room is nice and neat.",
+    "learn": [
+      "tidying up after playing",
+      "where toys belong",
+      "helping and teamwork",
+      "counting to three"
+    ],
+    "tags": [
+      "clean up song",
+      "clean up song for kids",
+      "tidy up song",
+      "toddler routine songs",
+      "preschool transition songs",
+      "cleaning song for kids",
+      "helping song",
+      "classroom songs",
+      "daycare songs",
+      "toys song",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#cleanupsong",
+      "#kidssongs",
+      "#toddlerlife",
+      "#preschool"
+    ],
+    "playlist": "Healthy Habits Songs"
+  }
+}

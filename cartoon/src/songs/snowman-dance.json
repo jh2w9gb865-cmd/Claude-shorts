@@ -1,0 +1,217 @@
+{
+  "slug": "snowman-dance",
+  "id": "SnowmanDance",
+  "audio": "audio/snowman-dance.mp3",
+  "durationFrames": 3781,
+  "scene": "snow",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "sleigh bells and bouncy bass",
+    "winter dance pop"
+  ],
+  "title": {
+    "portrait": [
+      "Snowman",
+      "Dance!"
+    ],
+    "landscape": [
+      "Snowman Dance!"
+    ]
+  },
+  "outroText": "YAY!",
+  "cast": [
+    {
+      "kind": "penguin",
+      "name": "Pippa Penguin",
+      "emoji": "🐧",
+      "about": "flaps her flippers to the beat"
+    },
+    {
+      "kind": "snowman",
+      "name": "Sammy Snowman",
+      "emoji": "⛄",
+      "about": "a jolly snowman who loves to dance"
+    },
+    {
+      "kind": "bunny",
+      "name": "Bella Bunny",
+      "emoji": "🐰",
+      "about": "the best hopper in the snow"
+    },
+    {
+      "kind": "polarbear",
+      "name": "Polo Polar Bear",
+      "emoji": "🐻‍❄️",
+      "about": "big, fluffy and great at spinning"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "I'm a snowman, round and white,",
+        "with a carrot nose so bright.",
+        "When the music starts to play,",
+        "I can dance the snowy way!"
+      ],
+      "focus": [
+        1
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shake, shake, shake your arms,",
+        "stomp, stomp, stomp your feet,",
+        "wiggle, wiggle, turn around,",
+        "dance the snowman beat!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Penguin flaps and Bunny hops,",
+        "spinning round like spinning tops.",
+        "Clap your hands and touch your nose,",
+        "wiggle all your frosty toes!"
+      ],
+      "focus": [
+        0,
+        2
+      ],
+      "words": [
+        {
+          "word": "FLAP",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "HOP",
+          "color": "#ff4f9a"
+        },
+        {
+          "word": "CLAP",
+          "color": "#ffc300"
+        },
+        {
+          "word": "TOES",
+          "color": "#8e5bff"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shake, shake, shake your arms,",
+        "stomp, stomp, stomp your feet,",
+        "wiggle, wiggle, turn around,",
+        "dance the snowman beat!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Nod your head and touch the ground,",
+        "jump up high and spin around!",
+        "Snowflakes falling, one, two, three,",
+        "come and dance the snow with me!"
+      ],
+      "focus": [
+        3,
+        1
+      ],
+      "words": [
+        {
+          "word": "NOD",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "JUMP",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "1, 2, 3!",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shake, shake, shake your arms,",
+        "stomp, stomp, stomp your feet,",
+        "wiggle, wiggle, turn around,",
+        "dance the snowman beat!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Shake, shake, shake your arms,",
+        "stomp, stomp, stomp your feet,",
+        "wiggle, wiggle, turn around,",
+        "dance the snowman beat!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Yay, snow!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Snowman Dance",
+    "shortTitle": "Snowman Dance ⛄ Shake, Stomp & Wiggle!",
+    "longTitle": "Snowman Dance ⛄ Winter Dance Song for Kids | Move & Learn Body Parts | Sunny Sprouts",
+    "hook": "⛄ Shake your arms, stomp your feet and dance with Sammy Snowman!",
+    "about": "A bouncy winter action song for little ones. Sammy Snowman, Pippa Penguin, Bella Bunny and Polo Polar Bear show kids how to shake, stomp, wiggle, clap and spin. Perfect for a winter dance break!",
+    "learn": [
+      "body parts: arms, feet, head, nose and toes",
+      "action words: shake, stomp, clap, jump and spin",
+      "counting to three",
+      "moving to the beat"
+    ],
+    "tags": [
+      "snowman song",
+      "snowman dance",
+      "winter songs for kids",
+      "christmas songs for kids",
+      "dance songs for kids",
+      "action songs for kids",
+      "movement songs for toddlers",
+      "body parts song",
+      "brain break for kids",
+      "freeze dance kids",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#wintersongs",
+      "#kidssongs",
+      "#dancesongs",
+      "#snowman"
+    ],
+    "playlist": "Christmas Songs for Kids"
+  }
+}

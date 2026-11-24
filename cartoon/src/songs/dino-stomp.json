@@ -1,0 +1,221 @@
+{
+  "slug": "dino-stomp",
+  "id": "DinoStomp",
+  "audio": "audio/dino-stomp.mp3",
+  "durationFrames": 3781,
+  "scene": "meadow",
+  "sky": "sunset",
+  "mood": "party",
+  "styles": [
+    "stompy drums and tuba bass"
+  ],
+  "title": {
+    "portrait": [
+      "Dino",
+      "Stomp!"
+    ],
+    "landscape": [
+      "Dino Stomp!"
+    ]
+  },
+  "outroText": "ROAR!",
+  "cast": [
+    {
+      "kind": "stego",
+      "name": "Steggy",
+      "emoji": "🦕",
+      "about": "has plates all down his back"
+    },
+    {
+      "kind": "trex",
+      "name": "Rexy",
+      "emoji": "🦖",
+      "about": "big, loud and super friendly"
+    },
+    {
+      "kind": "bronto",
+      "name": "Bronty",
+      "emoji": "🦕",
+      "about": "has the longest neck"
+    },
+    {
+      "kind": "tricera",
+      "name": "Trixie",
+      "emoji": "🦖",
+      "about": "has three horns and a big frill"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "T-Rex is big and T-Rex is tall,",
+        "he stomps so loud, it shakes us all!",
+        "Little arms that go like this,",
+        "and a roar you just can't miss: ROAR!"
+      ],
+      "focus": [
+        1
+      ],
+      "words": [
+        null,
+        {
+          "word": "STOMP",
+          "color": "#3ec43e"
+        },
+        null,
+        {
+          "word": "ROAR!",
+          "color": "#ff3b3b"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Dino stomp, dino stomp,",
+        "stomp, stomp, stomp around!",
+        "Dino stomp, dino stomp,",
+        "make a dino sound: ROAR!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Stegosaurus, plates on his back,",
+        "walking slow along the track!",
+        "Triceratops, horns, one, two, three,",
+        "she's as friendly as can be!"
+      ],
+      "focus": [
+        0,
+        3
+      ],
+      "words": [
+        {
+          "word": "PLATES",
+          "color": "#ff8a1f"
+        },
+        null,
+        {
+          "word": "3 HORNS",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Dino stomp, dino stomp,",
+        "stomp, stomp, stomp around!",
+        "Dino stomp, dino stomp,",
+        "make a dino sound: ROAR!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Brontosaurus, long, long neck,",
+        "eating leaves up high, let's check!",
+        "Swing your tail and stomp your feet,",
+        "dinosaurs dance to the beat!"
+      ],
+      "focus": [
+        2
+      ],
+      "words": [
+        {
+          "word": "LONG NECK",
+          "color": "#8e5bff"
+        },
+        {
+          "word": "LEAVES",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "TAIL",
+          "color": "#ff8a1f"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Dino stomp, dino stomp,",
+        "stomp, stomp, stomp around!",
+        "Dino stomp, dino stomp,",
+        "make a dino sound: ROAR!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Dino stomp, dino stomp,",
+        "stomp, stomp, stomp around!",
+        "Dino stomp, dino stomp,",
+        "make a dino sound: ROAR!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "ROAR!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Dino Stomp",
+    "shortTitle": "Dino Stomp 🦖 Stomp, Stomp, ROAR!",
+    "longTitle": "Dino Stomp 🦖 Dinosaur Song for Kids | T-Rex, Stegosaurus, Triceratops | Sunny Sprouts",
+    "hook": "🦖 Stomp, stomp, ROAR! Dance like a dinosaur with Rexy and friends!",
+    "about": "A stompy dinosaur dance song for kids. Rexy the T-Rex, Steggy the Stegosaurus, Trixie the Triceratops and Bronty the Brontosaurus show their plates, horns, long neck and tiny arms, and everybody stomps and roars to the beat!",
+    "learn": [
+      "dinosaur names: T-Rex, Stegosaurus, Triceratops, Brontosaurus",
+      "dinosaur features: plates, horns, long neck, tail",
+      "counting to three",
+      "stomping and moving to the beat"
+    ],
+    "tags": [
+      "dinosaur song",
+      "dinosaur songs for kids",
+      "dino song",
+      "t rex song",
+      "dinosaurs for kids",
+      "dinosaur dance",
+      "roar song",
+      "triceratops stegosaurus",
+      "action songs for kids",
+      "dance songs for kids",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#dinosaursong",
+      "#dinosaurs",
+      "#kidssongs",
+      "#trex"
+    ],
+    "playlist": "Animal Songs"
+  }
+}

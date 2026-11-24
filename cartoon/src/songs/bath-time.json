@@ -1,0 +1,231 @@
+{
+  "slug": "bath-time",
+  "id": "BathTime",
+  "audio": "audio/bath-time.mp3",
+  "durationFrames": 3781,
+  "scene": "bathroom",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "bubbly ukulele and glockenspiel"
+  ],
+  "title": {
+    "portrait": [
+      "Bath Time",
+      "Bubbles!"
+    ],
+    "landscape": [
+      "Bath Time Bubbles!"
+    ]
+  },
+  "outroText": "CLEAN!",
+  "cast": [
+    {
+      "kind": "duck",
+      "name": "Ducky",
+      "emoji": "🦆",
+      "about": "a squeaky rubber duck"
+    },
+    {
+      "kind": "bubble",
+      "name": "Bubbles",
+      "emoji": "🫧",
+      "about": "floats higher than everyone"
+    },
+    {
+      "kind": "boat",
+      "name": "Toot Toot Boat",
+      "emoji": "⛵",
+      "about": "a little toy boat that loves to sail"
+    },
+    {
+      "kind": "frog",
+      "name": "Freddie Frog",
+      "emoji": "🐸",
+      "about": "jumps in with the biggest splash"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Splish, splash, into the tub,",
+        "it's time for a rub-a-dub-dub!",
+        "Rubber Duck says, 'Quack, quack, quack!'",
+        "floating to the front and back!"
+      ],
+      "focus": [
+        0
+      ],
+      "words": [
+        {
+          "word": "SPLASH",
+          "color": "#2fa8ff"
+        },
+        null,
+        {
+          "word": "QUACK!",
+          "color": "#ffc300"
+        },
+        null
+      ],
+      "delayMs": 8000
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Bubbles, bubbles, pop, pop, pop,",
+        "bath time fun, we'll never stop!",
+        "Bubbles, bubbles, float up high,",
+        "wave the bubbles bye-bye-bye!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Toy boat sailing, toot, toot, toot,",
+        "Froggy jumps in, what a hoot!",
+        "Wash your tummy, wash your toes,",
+        "wash your ears and wash your nose!"
+      ],
+      "focus": [
+        2,
+        3
+      ],
+      "words": [
+        {
+          "word": "TOOT!",
+          "color": "#ff3b3b"
+        },
+        {
+          "word": "JUMP",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "TUMMY",
+          "color": "#ff4f9a"
+        },
+        {
+          "word": "NOSE",
+          "color": "#ff8a1f"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Bubbles, bubbles, pop, pop, pop,",
+        "bath time fun, we'll never stop!",
+        "Bubbles, bubbles, float up high,",
+        "wave the bubbles bye-bye-bye!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Shampoo bubbles on my head,",
+        "rinse it off, it's nearly bed!",
+        "Wrap up in a towel so snug,",
+        "time for one big bath-time hug!"
+      ],
+      "focus": [
+        1
+      ],
+      "words": [
+        {
+          "word": "SHAMPOO",
+          "color": "#8e5bff"
+        },
+        {
+          "word": "RINSE",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "TOWEL",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "HUG",
+          "color": "#ff4f9a"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Bubbles, bubbles, pop, pop, pop,",
+        "bath time fun, we'll never stop!",
+        "Bubbles, bubbles, float up high,",
+        "wave the bubbles bye-bye-bye!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Bubbles, bubbles, pop, pop, pop,",
+        "bath time fun, we'll never stop!",
+        "Bubbles, bubbles, float up high,",
+        "wave the bubbles bye-bye-bye!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Squeaky clean!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Bath Time Bubbles",
+    "shortTitle": "Bath Time Bubbles 🛁 Splish Splash Song!",
+    "longTitle": "Bath Time Bubbles 🛁 Bath Song for Kids | Splish Splash Rubber Duck | Sunny Sprouts",
+    "hook": "🛁 Splish, splash! It's bath time with Ducky, Bubbles, Toot Toot Boat and Freddie Frog!",
+    "about": "A bubbly bath time song that turns washing into play. Kids wash their tummy, toes, ears and nose, rinse the shampoo bubbles and wrap up in a cozy towel, ready for bed.",
+    "learn": [
+      "body parts: tummy, toes, ears, nose",
+      "bath time routine",
+      "bubbles, shampoo and towel",
+      "getting ready for bed"
+    ],
+    "tags": [
+      "bath song for kids",
+      "bath time song",
+      "rubber duck song",
+      "bubbles song",
+      "bath time for toddlers",
+      "kids routine songs",
+      "bedtime routine song",
+      "splish splash song",
+      "healthy habits for kids",
+      "bath toys song",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#bathtime",
+      "#kidssongs",
+      "#rubberduck",
+      "#healthyhabits"
+    ],
+    "playlist": "Healthy Habits Songs"
+  }
+}

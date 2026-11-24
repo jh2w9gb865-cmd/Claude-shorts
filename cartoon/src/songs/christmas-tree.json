@@ -1,0 +1,222 @@
+{
+  "slug": "christmas-tree",
+  "id": "ChristmasTree",
+  "audio": "audio/christmas-tree.mp3",
+  "durationFrames": 3781,
+  "scene": "snow",
+  "mood": "party",
+  "styles": [
+    "sleigh bells and glockenspiel",
+    "festive Christmas pop"
+  ],
+  "title": {
+    "portrait": [
+      "Jingle Jingle",
+      "Christmas Tree!"
+    ],
+    "landscape": [
+      "Jingle Jingle Christmas Tree!"
+    ]
+  },
+  "outroText": "YAY!",
+  "cast": [
+    {
+      "kind": "penguin",
+      "name": "Pippa Penguin",
+      "emoji": "🐧",
+      "about": "brings the shiniest red ribbon"
+    },
+    {
+      "kind": "tree",
+      "name": "Twinkle the Tree",
+      "emoji": "🎄",
+      "about": "a little tree who loves to sparkle"
+    },
+    {
+      "kind": "reindeer",
+      "name": "Rudy Reindeer",
+      "emoji": "🦌",
+      "about": "jingles a golden bell"
+    },
+    {
+      "kind": "gingerbread",
+      "name": "Ginger",
+      "emoji": "🍪",
+      "about": "a sweet gingerbread cookie with candy canes"
+    },
+    {
+      "kind": "polarbear",
+      "name": "Polo Polar Bear",
+      "emoji": "🐻‍❄️",
+      "about": "makes paper chains for the tree"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "focus": [
+        1
+      ],
+      "lines": [
+        "Little tree, so green and tall,",
+        "waiting for the Christmas ball.",
+        "Hang it here and hang it there,",
+        "sparkly lights are everywhere!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Jingle, jingle, Christmas tree,",
+        "shining bright for you and me!",
+        "Red and gold and green and blue,",
+        "merry Christmas, I love you!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "focus": [
+        0,
+        2
+      ],
+      "lines": [
+        "Penguin brings a ribbon red,",
+        "Reindeer rings a bell instead.",
+        "Gingerbread brings candy canes,",
+        "Polar Bear makes paper chains!"
+      ],
+      "words": [
+        {
+          "word": "RIBBON",
+          "color": "#ff3b3b"
+        },
+        {
+          "word": "BELL",
+          "color": "#ffc300"
+        },
+        {
+          "word": "CANDY",
+          "color": "#ff4f9a"
+        },
+        {
+          "word": "CHAINS",
+          "color": "#2fa8ff"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Jingle, jingle, Christmas tree,",
+        "shining bright for you and me!",
+        "Red and gold and green and blue,",
+        "merry Christmas, I love you!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "focus": [
+        1,
+        3,
+        4
+      ],
+      "lines": [
+        "Now it's time to reach up high,",
+        "put the star up in the sky!",
+        "Count with me: one, two, three,",
+        "light up, light up, Christmas tree!"
+      ],
+      "words": [
+        null,
+        {
+          "word": "STAR",
+          "color": "#ffc300"
+        },
+        {
+          "word": "1, 2, 3!",
+          "color": "#3ec43e"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Jingle, jingle, Christmas tree,",
+        "shining bright for you and me!",
+        "Red and gold and green and blue,",
+        "merry Christmas, I love you!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Jingle, jingle, Christmas tree,",
+        "shining bright for you and me!",
+        "Red and gold and green and blue,",
+        "merry Christmas, I love you!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Merry Christmas!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Jingle Jingle Christmas Tree",
+    "shortTitle": "Jingle Jingle Christmas Tree 🎄 Decorate with Me!",
+    "longTitle": "Jingle Jingle Christmas Tree 🎄 Christmas Song for Kids | Sunny Sprouts",
+    "hook": "🎄 Let's decorate the Christmas tree together! Hang the balls, light the lights and put the star on top!",
+    "about": "A happy, jingly Christmas sing-along for little ones. Penguin, Reindeer, Gingerbread and Polar Bear bring ribbons, bells, candy canes and paper chains to make the little tree sparkle, then everyone counts to three and lights it up!",
+    "learn": [
+      "Christmas words: tree, star, bell, ribbon, candy cane",
+      "colors: red, gold, green and blue",
+      "counting to three",
+      "sharing and doing things together"
+    ],
+    "tags": [
+      "christmas songs for kids",
+      "christmas tree song",
+      "jingle bells for kids",
+      "christmas song for toddlers",
+      "kids christmas songs",
+      "christmas nursery rhymes",
+      "decorate the christmas tree",
+      "christmas cartoon for kids",
+      "xmas songs for children",
+      "holiday songs for kids",
+      "preschool christmas songs",
+      "kindergarten christmas songs",
+      "sing along christmas songs",
+      "penguin christmas",
+      "reindeer song",
+      "gingerbread song",
+      "merry christmas song for kids",
+      "winter songs for kids",
+      "sunny sprouts",
+      "kids songs"
+    ],
+    "hashtags": [
+      "#christmassongs",
+      "#kidssongs",
+      "#christmastree",
+      "#nurseryrhymes"
+    ],
+    "playlist": "Christmas Songs for Kids",
+    "ages": "2–6"
+  }
+}

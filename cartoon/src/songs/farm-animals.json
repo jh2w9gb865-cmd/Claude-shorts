@@ -1,0 +1,226 @@
+{
+  "slug": "farm-animals",
+  "id": "FarmAnimals",
+  "audio": "audio/farm-animals.mp3",
+  "durationFrames": 3781,
+  "scene": "farm",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "country banjo and fiddle",
+    "barnyard fun"
+  ],
+  "title": {
+    "portrait": [
+      "Farm Animal",
+      "Sounds!"
+    ],
+    "landscape": [
+      "Farm Animal Sounds!"
+    ]
+  },
+  "outroText": "HOORAY!",
+  "cast": [
+    {
+      "kind": "cow",
+      "name": "Daisy Cow",
+      "emoji": "🐄",
+      "about": "says moo and gives us milk"
+    },
+    {
+      "kind": "pig",
+      "name": "Pinky Pig",
+      "emoji": "🐷",
+      "about": "loves rolling in the mud"
+    },
+    {
+      "kind": "duck",
+      "name": "Ducky",
+      "emoji": "🦆",
+      "about": "waddles to the pond"
+    },
+    {
+      "kind": "sheep",
+      "name": "Woolly Sheep",
+      "emoji": "🐑",
+      "about": "has the fluffiest coat"
+    },
+    {
+      "kind": "horse",
+      "name": "Henry Horse",
+      "emoji": "🐴",
+      "about": "gallops fast across the field"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "The cow in the barn says, 'Moo, moo, moo!'",
+        "She gives us milk, it's good for you!",
+        "The pig in the mud says, 'Oink, oink, oink!'",
+        "He rolls around and gives a wink!"
+      ],
+      "focus": [
+        0,
+        1
+      ],
+      "words": [
+        {
+          "word": "MOO!",
+          "color": "#8e5bff"
+        },
+        null,
+        {
+          "word": "OINK!",
+          "color": "#ff4f9a"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "On the farm, on the farm,",
+        "hear the animals by the barn!",
+        "Moo, oink, quack and baa,",
+        "neigh, neigh, ha, ha, ha!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "The duck in the pond says, 'Quack, quack, quack!'",
+        "She waddles there and waddles back!",
+        "The sheep on the hill says, 'Baa, baa, baa!'",
+        "Her woolly coat is soft, ah-ah!"
+      ],
+      "focus": [
+        2,
+        3
+      ],
+      "words": [
+        {
+          "word": "QUACK!",
+          "color": "#ffc300"
+        },
+        null,
+        {
+          "word": "BAA!",
+          "color": "#2fa8ff"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "On the farm, on the farm,",
+        "hear the animals by the barn!",
+        "Moo, oink, quack and baa,",
+        "neigh, neigh, ha, ha, ha!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "The horse in the field says, 'Neigh, neigh, neigh!'",
+        "He gallops fast and loves to play!",
+        "Now all together, loud and proud,",
+        "let's make our farm sounds really loud!"
+      ],
+      "focus": [
+        4
+      ],
+      "words": [
+        {
+          "word": "NEIGH!",
+          "color": "#ff8a1f"
+        },
+        null,
+        {
+          "word": "ALL TOGETHER!",
+          "color": "#3ec43e"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "On the farm, on the farm,",
+        "hear the animals by the barn!",
+        "Moo, oink, quack and baa,",
+        "neigh, neigh, ha, ha, ha!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "On the farm, on the farm,",
+        "hear the animals by the barn!",
+        "Moo, oink, quack and baa,",
+        "neigh, neigh, ha, ha, ha!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Ha, ha, hooray!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Farm Animal Sounds",
+    "shortTitle": "Farm Animal Sounds 🐄 Moo, Oink, Quack, Baa!",
+    "longTitle": "Farm Animal Sounds 🐄 Animal Sounds Song for Kids | Cow, Pig, Duck, Sheep, Horse | Sunny Sprouts",
+    "hook": "🐄🐷🦆 Moo, oink, quack, baa and neigh! Let's visit the farm and learn the animal sounds.",
+    "about": "A happy farm song for babies, toddlers and preschoolers. Daisy Cow, Pinky Pig, Ducky, Woolly Sheep and Henry Horse each say their sound, and then everyone joins in together, loud and proud!",
+    "learn": [
+      "farm animals: cow, pig, duck, sheep, horse",
+      "animal sounds: moo, oink, quack, baa, neigh",
+      "where animals live on the farm",
+      "making sounds together"
+    ],
+    "tags": [
+      "animal sounds song",
+      "farm animals song",
+      "farm animal sounds for kids",
+      "animal sounds for toddlers",
+      "farm song for kids",
+      "cow pig duck sheep horse",
+      "animals for kids",
+      "baby animal sounds",
+      "learn animals",
+      "learning songs",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#animalsounds",
+      "#farmanimals",
+      "#kidssongs",
+      "#toddlerlearning"
+    ],
+    "playlist": "Animal Songs"
+  }
+}

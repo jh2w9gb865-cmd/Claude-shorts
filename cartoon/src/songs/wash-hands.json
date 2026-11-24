@@ -1,0 +1,232 @@
+{
+  "slug": "wash-hands",
+  "id": "WashHands",
+  "audio": "audio/wash-hands.mp3",
+  "durationFrames": 3781,
+  "scene": "bathroom",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "bubbly synth and marimba",
+    "playful bounce"
+  ],
+  "title": {
+    "portrait": [
+      "Wash Wash",
+      "Your Hands!"
+    ],
+    "landscape": [
+      "Wash Wash Wash Your Hands!"
+    ]
+  },
+  "outroText": "CLEAN!",
+  "cast": [
+    {
+      "kind": "soap",
+      "name": "Sudsy Soap",
+      "emoji": "🧼",
+      "about": "makes the biggest, foamiest bubbles"
+    },
+    {
+      "kind": "bubble",
+      "name": "Bubbles",
+      "emoji": "🫧",
+      "about": "a shiny bubble who floats around"
+    },
+    {
+      "kind": "germ",
+      "name": "Grubby the Germ",
+      "emoji": "🦠",
+      "about": "a silly little germ who doesn't like soap"
+    },
+    {
+      "kind": "bunny",
+      "name": "Bella Bunny",
+      "emoji": "🐰",
+      "about": "always washes her paws"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Turn the water on, drip, drop,",
+        "squeeze the soap, pump, pump, pop!",
+        "Rub your hands and make it foam,",
+        "bubbles, bubbles, all your own!"
+      ],
+      "focus": [
+        0
+      ],
+      "words": [
+        {
+          "word": "WATER",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "SOAP",
+          "color": "#ff4f9a"
+        },
+        {
+          "word": "RUB",
+          "color": "#ffc300"
+        },
+        {
+          "word": "BUBBLES",
+          "color": "#8e5bff"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Wash, wash, wash your hands,",
+        "scrub them clean today!",
+        "Wash, wash, wash your hands,",
+        "wash the germs away!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Palms together, rub, rub, rub,",
+        "backs and fingers, scrub, scrub, scrub!",
+        "Don't forget your thumbs and nails,",
+        "wiggle, wiggle, bubble trails!"
+      ],
+      "focus": [
+        1,
+        3
+      ],
+      "words": [
+        {
+          "word": "PALMS",
+          "color": "#ff8a1f"
+        },
+        {
+          "word": "FINGERS",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "THUMBS",
+          "color": "#ff3b3b"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Wash, wash, wash your hands,",
+        "scrub them clean today!",
+        "Wash, wash, wash your hands,",
+        "wash the germs away!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Little germs say, 'Oh, oh, no!'",
+        "Time for all the germs to go!",
+        "Rinse them off and shake, shake, shake,",
+        "dry them with a towel, no mistake!"
+      ],
+      "focus": [
+        2,
+        0
+      ],
+      "words": [
+        null,
+        {
+          "word": "BYE, GERMS!",
+          "color": "#3ec43e"
+        },
+        {
+          "word": "RINSE",
+          "color": "#2fa8ff"
+        },
+        {
+          "word": "DRY",
+          "color": "#ff8a1f"
+        }
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Wash, wash, wash your hands,",
+        "scrub them clean today!",
+        "Wash, wash, wash your hands,",
+        "wash the germs away!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Wash, wash, wash your hands,",
+        "scrub them clean today!",
+        "Wash, wash, wash your hands,",
+        "wash the germs away!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Clean hands!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Wash Wash Wash Your Hands",
+    "shortTitle": "Wash Your Hands Song 🧼 Bye Bye Germs!",
+    "longTitle": "Wash Wash Wash Your Hands 🧼 Handwashing Song for Kids | Healthy Habits | Sunny Sprouts",
+    "hook": "🧼 Scrub-a-dub! Learn to wash your hands the fun way with Sudsy Soap and Bubbles!",
+    "about": "A catchy handwashing song for toddlers and preschoolers. Sudsy Soap and Bubbles show every step: water, soap, rub palms, backs, fingers, thumbs and nails, rinse and dry, and silly Grubby the Germ has to go away!",
+    "learn": [
+      "the steps of washing hands",
+      "palms, fingers, thumbs and nails",
+      "why we wash away germs",
+      "rinsing and drying hands"
+    ],
+    "tags": [
+      "wash your hands song",
+      "handwashing song for kids",
+      "wash hands kids",
+      "germs song for kids",
+      "healthy habits for kids",
+      "hygiene song for kids",
+      "soap song",
+      "kids routine songs",
+      "bathroom songs for kids",
+      "clean hands song",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#washyourhands",
+      "#healthyhabits",
+      "#kidssongs",
+      "#handwashing"
+    ],
+    "playlist": "Healthy Habits Songs"
+  }
+}

@@ -1,0 +1,65 @@
+import React from "react";
+import { Bluebird, Chick, Fox, Frog, Grapes, Ladybug, Pose } from "../characters/Animals";
+import * as W from "./chars-winter";
+import * as H from "./chars-home";
+import * as N from "./chars-nature";
+
+type Entry = { C: React.FC<Pose>; height: number };
+
+/** Every posable character, with its approximate height (feet at 0) used for auto-sizing. */
+export const CHARACTERS: Record<string, Entry> = {
+  ladybug: { C: Ladybug, height: 365 },
+  fox: { C: Fox, height: 365 },
+  chick: { C: Chick, height: 240 },
+  frog: { C: Frog, height: 215 },
+  bluebird: { C: Bluebird, height: 255 },
+  grapes: { C: Grapes, height: 370 },
+  tree: { C: W.ChristmasTree, height: 476 },
+  penguin: { C: W.Penguin, height: 250 },
+  reindeer: { C: W.Reindeer, height: 420 },
+  gingerbread: { C: W.Gingerbread, height: 330 },
+  bunny: { C: W.Bunny, height: 420 },
+  bear: { C: W.Bear, height: 340 },
+  polarbear: { C: W.PolarBear, height: 340 },
+  snowman: { C: W.Snowman, height: 470 },
+  santa: { C: W.Santa, height: 400 },
+  elfgreen: { C: W.ElfGreen, height: 345 },
+  elfred: { C: W.ElfRed, height: 345 },
+  tooth: { C: H.Tooth, height: 310 },
+  toothbrush: { C: H.Toothbrush, height: 470 },
+  toothpaste: { C: H.Toothpaste, height: 500 },
+  soap: { C: H.Soap, height: 310 },
+  bubble: { C: H.BubbleBuddy, height: 300 },
+  germ: { C: H.Germ, height: 250 },
+  duck: { C: H.RubberDuck, height: 290 },
+  boat: { C: H.ToyBoat, height: 395 },
+  star: { C: H.StarBuddy, height: 320 },
+  ball: { C: H.Ball, height: 280 },
+  block: { C: H.Block, height: 320 },
+  circle: { C: H.CircleShape, height: 290 },
+  square: { C: H.SquareShape, height: 300 },
+  triangle: { C: H.TriangleShape, height: 350 },
+  heart: { C: H.HeartShape, height: 320 },
+  sun: { C: H.SunBuddy, height: 360 },
+  cloud: { C: H.CloudBuddy, height: 290 },
+  raindrop: { C: H.Raindrop, height: 380 },
+  snowflake: { C: H.Snowflake, height: 330 },
+  cow: { C: N.Cow, height: 390 },
+  pig: { C: N.Pig, height: 330 },
+  sheep: { C: N.Sheep, height: 340 },
+  horse: { C: N.Horse, height: 420 },
+  trex: { C: N.TRex, height: 380 },
+  stego: { C: N.Stego, height: 380 },
+  tricera: { C: N.Tricera, height: 410 },
+  bronto: { C: N.Bronto, height: 460 },
+  fish: { C: N.Fish, height: 290 },
+  octopus: { C: N.Octopus, height: 300 },
+  turtle: { C: N.Turtle, height: 345 },
+  crab: { C: N.Crab, height: 260 },
+  apple: { C: N.Apple, height: 330 },
+  banana: { C: N.Banana, height: 440 },
+  strawberry: { C: N.Strawberry, height: 356 },
+  orange: { C: N.Orange, height: 322 },
+  watermelon: { C: N.Watermelon, height: 290 },
+};
+export type CharKind = keyof typeof CHARACTERS;

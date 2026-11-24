@@ -1,0 +1,222 @@
+{
+  "slug": "fruit-squad",
+  "id": "FruitSquad",
+  "audio": "audio/fruit-squad.mp3",
+  "durationFrames": 3781,
+  "scene": "meadow",
+  "sky": "day",
+  "mood": "party",
+  "styles": [
+    "tropical marimba and claps"
+  ],
+  "title": {
+    "portrait": [
+      "Fruit",
+      "Squad!"
+    ],
+    "landscape": [
+      "Fruit Squad Song!"
+    ]
+  },
+  "outroText": "HOORAY!",
+  "cast": [
+    {
+      "kind": "banana",
+      "name": "Benny Banana",
+      "emoji": "🍌",
+      "about": "long, yellow and silly"
+    },
+    {
+      "kind": "apple",
+      "name": "Annie Apple",
+      "emoji": "🍎",
+      "about": "crunchy and red"
+    },
+    {
+      "kind": "strawberry",
+      "name": "Stella Strawberry",
+      "emoji": "🍓",
+      "about": "sweet with little seeds"
+    },
+    {
+      "kind": "orange",
+      "name": "Ollie Orange",
+      "emoji": "🍊",
+      "about": "round, bright and juicy"
+    },
+    {
+      "kind": "watermelon",
+      "name": "Wally Watermelon",
+      "emoji": "🍉",
+      "about": "the biggest fruit in the squad"
+    }
+  ],
+  "sections": [
+    {
+      "kind": "intro",
+      "ms": 8000
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Apple, apple, red and round,",
+        "crunchy, munchy, what a sound!",
+        "Banana, banana, long and yellow,",
+        "peel it, eat it, happy fellow!"
+      ],
+      "focus": [
+        1,
+        0
+      ],
+      "words": [
+        {
+          "word": "APPLE",
+          "color": "#ff3b3b"
+        },
+        null,
+        {
+          "word": "BANANA",
+          "color": "#ffc300"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Fruit Squad, Fruit Squad, here we come,",
+        "juicy, yummy, yum, yum, yum!",
+        "Eat a rainbow every day,",
+        "strong and healthy, hip, hooray!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Strawberry, so sweet and red,",
+        "little seeds all on her head!",
+        "Orange, orange, round and bright,",
+        "juicy, squeezy, take a bite!"
+      ],
+      "focus": [
+        2,
+        3
+      ],
+      "words": [
+        {
+          "word": "STRAWBERRY",
+          "color": "#ff3b3b"
+        },
+        null,
+        {
+          "word": "ORANGE",
+          "color": "#ff8a1f"
+        },
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Fruit Squad, Fruit Squad, here we come,",
+        "juicy, yummy, yum, yum, yum!",
+        "Eat a rainbow every day,",
+        "strong and healthy, hip, hooray!"
+      ]
+    },
+    {
+      "kind": "verse",
+      "ms": 16000,
+      "lines": [
+        "Watermelon, big and green,",
+        "pinkest inside you've ever seen!",
+        "Fruit is fun and fruit is sweet,",
+        "Fruit Squad is the best to eat!"
+      ],
+      "focus": [
+        4
+      ],
+      "words": [
+        {
+          "word": "WATERMELON",
+          "color": "#3ec43e"
+        },
+        null,
+        null,
+        null
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Fruit Squad, Fruit Squad, here we come,",
+        "juicy, yummy, yum, yum, yum!",
+        "Eat a rainbow every day,",
+        "strong and healthy, hip, hooray!"
+      ]
+    },
+    {
+      "kind": "chorus",
+      "ms": 16000,
+      "lines": [
+        "Fruit Squad, Fruit Squad, here we come,",
+        "juicy, yummy, yum, yum, yum!",
+        "Eat a rainbow every day,",
+        "strong and healthy, hip, hooray!"
+      ]
+    },
+    {
+      "kind": "outro",
+      "ms": 6000,
+      "lines": [
+        "Hip, hip, hooray!"
+      ]
+    }
+  ],
+  "meta": {
+    "song": "Fruit Squad",
+    "shortTitle": "Fruit Squad 🍓 Yummy Fruit Song for Kids!",
+    "longTitle": "Fruit Squad Song 🍓 Fruit Names for Kids | Healthy Eating Song | Sunny Sprouts",
+    "hook": "🍎🍌🍓🍊🍉 Here comes the Fruit Squad! Juicy, yummy, yum, yum, yum!",
+    "about": "A juicy sing-along that teaches fruit names and healthy eating. Annie Apple, Benny Banana, Stella Strawberry, Ollie Orange and Wally Watermelon sing about their colors and shapes, and remind kids to eat a rainbow every day.",
+    "learn": [
+      "fruit names: apple, banana, strawberry, orange, watermelon",
+      "fruit colors and shapes",
+      "eating a rainbow of fruit",
+      "healthy food choices"
+    ],
+    "tags": [
+      "fruit song",
+      "fruit song for kids",
+      "fruits for kids",
+      "healthy eating song",
+      "learn fruit names",
+      "fruits and vegetables for kids",
+      "food song for kids",
+      "eat a rainbow",
+      "healthy habits for kids",
+      "veggie squad",
+      "kids songs",
+      "songs for kids",
+      "nursery rhymes",
+      "toddler songs",
+      "preschool songs",
+      "kindergarten songs",
+      "sing along songs for kids",
+      "children's songs",
+      "sunny sprouts"
+    ],
+    "hashtags": [
+      "#fruitsong",
+      "#healthyeating",
+      "#kidssongs",
+      "#fruits"
+    ],
+    "playlist": "Healthy Habits Songs"
+  }
+}
