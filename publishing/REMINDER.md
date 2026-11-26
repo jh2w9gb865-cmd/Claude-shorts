@@ -21,5 +21,10 @@ Reply to the owner in **Armenian**. Files live in `publishing/<slug>/`.
    If the image, subtitles or `.md` are missing too, run `tools/render_song.sh <slug>` (it rebuilds everything, ~10 min).
    If a render will take a while, send the text message (step 3) first and the files after.
 2. **Send the files** with SendUserFile, status `"proactive"`: video, image, subtitles.
+   The owner downloads on a phone, and big files fail. Send a phone-friendly copy `<video>-phone.mp4`
+   (aim for ≤25 MB for a Short and ≤60 MB for a regular video):
+   `ffmpeg -y -i <video> -c:v libx264 -preset slow -crf 23 -maxrate 6M -bufsize 12M -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart <video-phone>`
+   For a regular video use `-crf 26 -maxrate 4M -bufsize 8M`.
+   Write the chat message entirely in Armenian. Keep the YouTube copy blocks in English, and add an Armenian translation of the title and description below them.
 3. **Message**: "upload in ~15 min (<time>)", then paste ready-to-copy blocks (Title, Description, Tags, Settings) from the right section of `publishing/<slug>/<slug>.md`.
    For a Regular upload, also remind them to set it as the same song's Short's **Related video** once it's live.
